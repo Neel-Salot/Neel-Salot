@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%">
+  <defs>
+    <linearGradient id="lightNeonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0969da" stop-opacity="1" />
+      <stop offset="100%" stop-color="#218bff" stop-opacity="1" />
+    </linearGradient>
+    
+    <style>
+      .glow-text-light {
+        font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        fill: #24292f;
+        text-shadow: 0 0 10px rgba(9, 105, 218, 0.15);
+      }
+      .sub-text-light {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-weight: 400;
+        fill: #57606a;
+        letter-spacing: 3px;
+      }
+      .node-pulse-light {
+        animation: pulseLight 3s infinite alternate;
+      }
+      .line-flow-light {
+        stroke-dasharray: 10, 15;
+        animation: flowLight 20s linear infinite;
+      }
+      @keyframes pulseLight {
+        0% { r: 4; opacity: 0.4; }
+        100% { r: 8; opacity: 1; filter: drop-shadow(0 0 6px #0969da); }
+      }
+      @keyframes flowLight {
+        to { stroke-dashoffset: -250; }
+      }
+      .orbit-light {
+        animation: rotateLight 30s linear infinite;
+        transform-origin: 850px 160px;
+      }
+      @keyframes rotateLight {
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="320" fill="#ffffff"/>
+  
+  <!-- Grid matrix -->
+  <g opacity="0.4">
+    <path d="M 0,40 L 1000,40 M 0,80 L 1000,80 M 0,120 L 1000,120 M 0,160 L 1000,160 M 0,200 L 1000,200 M 0,240 L 1000,240 M 0,280 L 1000,280" stroke="#eaeef2" stroke-width="1"/>
+    <path d="M 100,0 L 100,320 M 200,0 L 200,320 M 300,0 L 300,320 M 400,0 L 400,320 M 500,0 L 500,320 M 600,0 L 600,320 M 700,0 L 700,320 M 800,0 L 800,320 M 900,0 L 900,320" stroke="#eaeef2" stroke-width="1"/>
+  </g>
+  
+  <!-- System Architecture Flow Simulation -->
+  <g opacity="0.6">
+    <path class="line-flow-light" d="M 50,160 L 250,90 L 500,160 L 750,90 L 950,160" fill="none" stroke="url(#lightNeonGlow)" stroke-width="2"/>
+    <path class="line-flow-light" d="M 50,160 L 250,230 L 500,160 L 750,230 L 950,160" fill="none" stroke="#8250df" stroke-width="2" style="animation-duration: 15s; animation-direction: reverse;"/>
+    
+    <!-- Nodes -->
+    <circle class="node-pulse-light" cx="250" cy="90" r="5" fill="#0969da"/>
+    <circle class="node-pulse-light" cx="250" cy="230" r="5" fill="#8250df" style="animation-delay: 1.5s;"/>
+    <circle class="node-pulse-light" cx="500" cy="160" r="6" fill="#0969da" style="animation-delay: 0.7s;"/>
+    <circle class="node-pulse-light" cx="750" cy="90" r="5" fill="#8250df" style="animation-delay: 2.2s;"/>
+    <circle class="node-pulse-light" cx="750" cy="230" r="5" fill="#0969da" style="animation-delay: 0.3s;"/>
+  </g>
+  
+  <!-- Orbit visual -->
+  <g class="orbit-light" opacity="0.5">
+    <circle cx="850" cy="160" r="80" fill="none" stroke="#d0d7de" stroke-width="1"/>
+    <circle cx="850" cy="160" r="110" fill="none" stroke="#afb8c1" stroke-width="1" stroke-dasharray="5,10"/>
+    <circle cx="850" cy="160" r="50" fill="none" stroke="url(#lightNeonGlow)" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="770" cy="160" r="6" fill="#0969da"/>
+    <circle cx="940" cy="210" r="4" fill="#8250df"/>
+  </g>
+
+  <!-- Typography Content -->
+  <g transform="translate(80, 0)">
+    <!-- Terminal prefix style -->
+    <text x="0" y="105" font-family="'Fira Code', 'Courier New', monospace" font-size="16" fill="#0969da" font-weight="bold">&gt;_ USER_ID: NEEL SALOT</text>
+    
+    <!-- Title -->
+    <text x="0" y="165" class="glow-text-light" font-size="48">SYSTEMS THINKER</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="215" class="sub-text-light" font-size="14">AI BUILDER // FULL STACK DEVELOPER</text>
+    
+    <!-- Tech chips -->
+    <rect x="0" y="240" width="80" height="22" rx="11" fill="#eaeef2" stroke="#d0d7de" stroke-width="1"/>
+    <text x="40" y="255" font-family="'Fira Code', monospace" font-size="10" fill="#0969da" text-anchor="middle">AgenticAI</text>
+    
+    <rect x="90" y="240" width="70" height="22" rx="11" fill="#eaeef2" stroke="#d0d7de" stroke-width="1"/>
+    <text x="125" y="255" font-family="'Fira Code', monospace" font-size="10" fill="#0969da" text-anchor="middle">React</text>
+    
+    <rect x="170" y="240" width="80" height="22" rx="11" fill="#eaeef2" stroke="#d0d7de" stroke-width="1"/>
+    <text x="210" y="255" font-family="'Fira Code', monospace" font-size="10" fill="#0969da" text-anchor="middle">Node/Py</text>
+    
+    <rect x="260" y="240" width="85" height="22" rx="11" fill="#eaeef2" stroke="#d0d7de" stroke-width="1"/>
+    <text x="302" y="255" font-family="'Fira Code', monospace" font-size="10" fill="#0969da" text-anchor="middle">Supabase</text>
+  </g>
+</svg>

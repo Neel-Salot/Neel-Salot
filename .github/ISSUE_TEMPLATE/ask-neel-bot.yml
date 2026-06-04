@@ -1,0 +1,25 @@
+name: 🤖 Ask Neel-Bot a Question
+description: Prompts Neel-Bot's AI agent to answer a question and logs the response on the profile.
+title: "🧠 Ask Neel-Bot: [Your Question Here]"
+labels: ["neel-bot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Welcome to the Neel-Bot Agent Loop!
+        Ask Neel-Bot anything about Neel's research, skills, or dynamic projects.
+        The agent will execute a run, parse your question, and answer.
+  - type: input
+    id: question
+    attributes:
+      label: What is your question?
+      placeholder: E.g., What technologies did Neel use in DailyNest?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      placeholder: Provide any details if needed...
+    validations:
+      required: false

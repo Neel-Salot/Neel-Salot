@@ -1,0 +1,17 @@
+name: 🔧 Run Self-Healing Patch
+description: Launch a repair and diagnostic job to restore degraded or offline agent nodes.
+title: "🔧 Run Self-Healing Patch on Agent Cluster"
+labels: ["neel-bot", "patch"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Restoring System Integrity
+        This triggers a system recovery job on the profile console. It will locate any offline (`OFFLINE`) or degraded (`DEGRADED`) nodes and attempt to bring them back to an `ONLINE` state.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm Healing Patch
+      options:
+        - label: I confirm that I want to run the system patch and diagnostics sequence to restore cluster stability.
+          required: true

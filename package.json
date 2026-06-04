@@ -1,0 +1,13 @@
+{
+  "name": "neel-bot-agent",
+  "version": "1.0.0",
+  "description": "Autonomous agent running on Neel Salot's GitHub profile.",
+  "main": "scripts/neel-bot.js",
+  "scripts": {
+    "start": "node scripts/neel-bot.js"
+  },
+  "dependencies": {
+    "@actions/github": "^6.0.0",
+    "@google/generative-ai": "^0.1.0"
+  }
+}

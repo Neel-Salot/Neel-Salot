@@ -1,0 +1,205 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%">
+  <!-- Definition / Grid Background -->
+  <defs>
+    <pattern id="dark-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#161b22" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="850" height="480" rx="12" fill="#080b11" stroke="#1f293d" stroke-width="2"/>
+  <rect width="850" height="480" rx="12" fill="url(#dark-grid)"/>
+
+  <!-- Window Control Bar -->
+  <rect x="15" y="15" width="820" height="35" rx="8" fill="#0f1424" stroke="#1f293d" stroke-width="1.5"/>
+  <circle cx="35" cy="32.5" r="5" fill="#ff5f56"/>
+  <circle cx="50" cy="32.5" r="5" fill="#ffbd2e"/>
+  <circle cx="65" cy="32.5" r="5" fill="#27c93f"/>
+  <text x="425" y="37" font-family="'Fira Code', 'Courier New', monospace" font-size="11" font-weight="bold" fill="#8b949e" text-anchor="middle">
+    NEEL-BOT CLUSTER COMMAND CENTER // STATE: STABLE
+  </text>
+  <circle cx="810" cy="32.5" r="4" fill="#00ffc4">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- LEFT PANEL: Core Health & Metrics -->
+  <g transform="translate(15, 62)">
+    <rect width="270" height="403" rx="10" fill="#0c101d" fill-opacity="0.8" stroke="#1f293d" stroke-width="1.5"/>
+    <text x="20" y="30" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#e1e4e8">SYSTEM INTEGRITY</text>
+    
+    <!-- Health gauge -->
+    <circle cx="75" cy="100" r="40" fill="none" stroke="#161b22" stroke-width="7"/>
+    <circle cx="75" cy="100" r="40" fill="none" stroke="#00ffc4" stroke-width="7" stroke-dasharray="251.3" stroke-dashoffset="0" transform="rotate(-90 75 100)"/>
+    <text x="75" y="106" font-family="'Fira Code', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#e1e4e8" text-anchor="middle">100%</text>
+    <text x="75" y="160" font-family="'Segoe UI', -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">CLUSTER HEALTH</text>
+
+    <!-- System Stats -->
+    <g transform="translate(140, 65)">
+      <text x="0" y="15" font-family="'Segoe UI', -apple-system, sans-serif" font-size="10" fill="#8b949e">SYSTEM UPTIME</text>
+      <text x="0" y="30" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#e1e4e8">0h 0m</text>
+      
+      <text x="0" y="55" font-family="'Segoe UI', -apple-system, sans-serif" font-size="10" fill="#8b949e">LAST INTERACTION</text>
+      <text x="0" y="70" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#e1e4e8">@guest</text>
+      <text x="0" y="82" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">AI_QUERY</text>
+    </g>
+
+    <!-- Coffee Buffer Gauge -->
+    <text x="20" y="195" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">CORE CPU RESERVE (COFFEE BUFFER)</text>
+    <rect x="20" y="205" width="80" height="20" rx="3" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+    <rect x="100" y="211" width="4" height="8" rx="1.5" fill="#8b949e"/>
+    <rect x="22" y="207" width="45.599999999999994" height="16" rx="2" fill="#00ffc4">
+      
+    </rect>
+    <text x="115" y="219" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#e1e4e8">95%</text>
+    <text x="155" y="219" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">(NOMINAL)</text>
+
+    <!-- Live Event Terminal Logs -->
+    <text x="20" y="255" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">CONSOLE EVENT LOGGER</text>
+    <rect x="20" y="265" width="230" height="118" rx="6" fill="#05070d" stroke="#1f293d" stroke-width="1"/>
+    
+    <g transform="translate(28, 282)">
+      <text x="0" y="15" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4">$ tail -n 3 cluster.log</text>
+      <text x="0" y="38" font-family="'Courier New', monospace" font-size="9.5" fill="#e1e4e8">💬 [QUERY] Query routed to MOMENTUM </text>
+      <text x="0" y="58" font-family="'Courier New', monospace" font-size="9.5" fill="#e1e4e8">System initialized. Command Center v</text>
+      <text x="0" y="78" font-family="'Courier New', monospace" font-size="9.5" fill="#e1e4e8">All project agent nodes reporting he</text>
+      
+      <rect x="0" y="90" width="6" height="10" fill="#00ffc4">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL: Network Schematic Diagram -->
+  <g transform="translate(297, 62)">
+    <rect width="538" height="403" rx="10" fill="#0c101d" fill-opacity="0.8" stroke="#1f293d" stroke-width="1.5"/>
+    <text x="20" y="30" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#e1e4e8">AGENT ARCHITECTURE TOPOLOGY</text>
+    <text x="20" y="45" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">INTELLIGENT LOAD BALANCER ACTIVE</text>
+
+    <!-- Network lines connecting satellites to Core -->
+    <!-- Core: Center (270, 200) -> coordinates in Panel: (270, 200) -->
+    <!-- Momentum AI: (100, 70) -->
+    <!-- Kairo AI: (440, 70) -->
+    <!-- DailyNest: (100, 330) -->
+    <!-- FlexiGrow: (440, 330) -->
+    
+      <line x1="270" y1="200" x2="100" y2="70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 8" />
+      <line x1="270" y1="200" x2="100" y2="70" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" opacity="0.3" stroke-dasharray="8 25">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+      </line>
+    
+    
+      <line x1="270" y1="200" x2="440" y2="70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 8" />
+      <line x1="270" y1="200" x2="440" y2="70" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" opacity="0.3" stroke-dasharray="8 25">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+      </line>
+    
+    
+      <line x1="270" y1="200" x2="100" y2="330" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 8" />
+      <line x1="270" y1="200" x2="100" y2="330" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" opacity="0.3" stroke-dasharray="8 25">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+      </line>
+    
+    
+      <line x1="270" y1="200" x2="440" y2="330" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 8" />
+      <line x1="270" y1="200" x2="440" y2="330" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" opacity="0.3" stroke-dasharray="8 25">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="4s" repeatCount="indefinite" />
+      </line>
+    
+
+    <!-- Interactive Node Elements -->
+    
+      <!-- Node Box: core -->
+      <g transform="translate(205, 164)">
+        <rect width="130" height="72" rx="8" fill="#0c101d" fill-opacity="0.9" stroke="#00ffc4" stroke-width="1.5" />
+        <text x="10" y="20" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">CORE_ROUTER</text>
+        <text x="10" y="33" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Neel-Bot Agent</text>
+        
+        <circle cx="15" cy="50" r="3.5" fill="#00ffc4">
+          
+          
+        </circle>
+        <text x="25" y="53" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4" font-weight="bold">ONLINE</text>
+        
+        <text x="120" y="20" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">Req: 50</text>
+        <text x="120" y="53" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">14ms</text>
+      </g>
+    
+    
+      <!-- Node Box: momentum -->
+      <g transform="translate(35, 34)">
+        <rect width="130" height="72" rx="8" fill="#0c101d" fill-opacity="0.9" stroke="#00ffc4" stroke-width="1.5" />
+        <text x="10" y="20" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">MOMENTUM_AI</text>
+        <text x="10" y="33" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Whisper/Gemini Build</text>
+        
+        <circle cx="15" cy="50" r="3.5" fill="#00ffc4">
+          
+          
+        </circle>
+        <text x="25" y="53" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4" font-weight="bold">ONLINE</text>
+        
+        <text x="120" y="20" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">Req: 21</text>
+        <text x="120" y="53" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">22ms</text>
+      </g>
+    
+    
+      <!-- Node Box: kairo -->
+      <g transform="translate(375, 34)">
+        <rect width="130" height="72" rx="8" fill="#0c101d" fill-opacity="0.9" stroke="#00ffc4" stroke-width="1.5" />
+        <text x="10" y="20" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">KAIRO_AI</text>
+        <text x="10" y="33" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Sign Language Platform</text>
+        
+        <circle cx="15" cy="50" r="3.5" fill="#00ffc4">
+          
+          
+        </circle>
+        <text x="25" y="53" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4" font-weight="bold">ONLINE</text>
+        
+        <text x="120" y="20" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">Req: 15</text>
+        <text x="120" y="53" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">30ms</text>
+      </g>
+    
+    
+      <!-- Node Box: dailynest -->
+      <g transform="translate(35, 294)">
+        <rect width="130" height="72" rx="8" fill="#0c101d" fill-opacity="0.9" stroke="#00ffc4" stroke-width="1.5" />
+        <text x="10" y="20" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">DAILY_NEST</text>
+        <text x="10" y="33" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Autism Support Platform</text>
+        
+        <circle cx="15" cy="50" r="3.5" fill="#00ffc4">
+          
+          
+        </circle>
+        <text x="25" y="53" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4" font-weight="bold">ONLINE</text>
+        
+        <text x="120" y="20" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">Req: 18</text>
+        <text x="120" y="53" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">19ms</text>
+      </g>
+    
+    
+      <!-- Node Box: flexigrow -->
+      <g transform="translate(375, 294)">
+        <rect width="130" height="72" rx="8" fill="#0c101d" fill-opacity="0.9" stroke="#00ffc4" stroke-width="1.5" />
+        <text x="10" y="20" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#e1e4e8">FLEXI_GROW</text>
+        <text x="10" y="33" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Hydroponics Telemetry</text>
+        
+        <circle cx="15" cy="50" r="3.5" fill="#00ffc4">
+          
+          
+        </circle>
+        <text x="25" y="53" font-family="'Courier New', monospace" font-size="9" fill="#00ffc4" font-weight="bold">ONLINE</text>
+        
+        <text x="120" y="20" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">Req: 12</text>
+        <text x="120" y="53" font-family="'Courier New', monospace" font-size="9" fill="#8b949e" text-anchor="end">15ms</text>
+      </g>
+    
+  </g>
+</svg>
+  
