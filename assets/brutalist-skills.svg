@@ -28,7 +28,7 @@
   <rect x="4" y="4" width="776" height="236" rx="6" fill="#00E5FF" stroke="#000000" stroke-width="4" />
 
   <!-- Section Title -->
-  <text x="30" y="42" class="section-title">// SYSTEM CORE DEPENDENCIES (TECH MATRIX)</text>
+  <text x="30" y="42" class="section-title">// TECHNICAL SKILLS</text>
 
   <!-- FRONTEND -->
   <g transform="translate(35, 68)">
@@ -37,7 +37,7 @@
     <!-- Box -->
     <rect x="0" y="0" width="355" height="74" rx="2" fill="#FFE600" stroke="#000000" stroke-width="2.5" />
     <!-- Content -->
-    <text x="15" y="24" class="category-title">[01_FRONT_END_DEPENDENCY]</text>
+    <text x="15" y="24" class="category-title">[FRONTEND]</text>
     <line x1="15" y1="33" x2="340" y2="33" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 2" />
     <text x="15" y="52" class="skill-text">React · TypeScript · TailwindCSS · HTML5 · CSS3</text>
   </g>
@@ -49,7 +49,7 @@
     <!-- Box -->
     <rect x="0" y="0" width="355" height="74" rx="2" fill="#00FF66" stroke="#000000" stroke-width="2.5" />
     <!-- Content -->
-    <text x="15" y="24" class="category-title">[02_BACK_END_LOGIC_ENGINE]</text>
+    <text x="15" y="24" class="category-title">[BACKEND &amp; APIs]</text>
     <line x1="15" y1="33" x2="340" y2="33" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 2" />
     <text x="15" y="52" class="skill-text">Node.js (Express) · Python (Django/FastAPI) · PHP · .NET</text>
   </g>
@@ -61,7 +61,7 @@
     <!-- Box -->
     <rect x="0" y="0" width="355" height="74" rx="2" fill="#FF55BB" stroke="#000000" stroke-width="2.5" />
     <!-- Content -->
-    <text x="15" y="24" class="category-title">[03_PERSISTENCE_DB_LAYERS]</text>
+    <text x="15" y="24" class="category-title">[DATABASES]</text>
     <line x1="15" y1="33" x2="340" y2="33" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 2" />
     <text x="15" y="52" class="skill-text">Supabase (PostgreSQL) · Firebase · MySQL · SQLite</text>
   </g>
@@ -73,7 +73,7 @@
     <!-- Box -->
     <rect x="0" y="0" width="355" height="74" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2.5" />
     <!-- Content -->
-    <text x="15" y="24" class="category-title">[04_INTELLIGENCE_AND_INFRA]</text>
+    <text x="15" y="24" class="category-title">[AI &amp; TOOLS]</text>
     <line x1="15" y1="33" x2="340" y2="33" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 2" />
     <text x="15" y="52" class="skill-text">Agentic pipelines · Gemini API · Whisper · Docker · Git</text>
   </g>

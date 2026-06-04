@@ -1,4 +1,4 @@
-# 🌌 NEEL_SALOT // SYSTEMS_OPERATOR
+# 🌌 NEEL SALOT // FULL STACK DEVELOPER & AI BUILDER
 
 <div align="center">
   <!-- Introduction Header Card -->
