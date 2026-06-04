@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="100%">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Fredoka:wght@500;600;700&amp;display=swap');
+    
+    .section-title {
+      font-family: 'Caveat', cursive;
+      font-size: 28px;
+      font-weight: 700;
+      fill: #1A1A1A;
+    }
+    .category-title {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #2C3E50;
+    }
+    .skill-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11.5px;
+      font-weight: bold;
+      fill: #1A1A1A;
+    }
+  </style>
+
+  <!-- Outer Shadow -->
+  <path d="M 14,14 Q 400,12 790,14 Q 792,126 790,248 Q 400,250 14,248 Q 12,126 14,14 Z" fill="rgba(26, 26, 26, 0.12)" />
+
+  <!-- Outer Card Body -->
+  <path d="M 8,8 Q 400,6 784,8 Q 786,124 784,244 Q 400,246 8,244 Q 6,124 8,8 Z" fill="#E8F6EF" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Section Title -->
+  <text x="30" y="42" class="section-title">My Technical Skills</text>
+
+  <!-- Lightbulb Doodle (Top Right) -->
+  <g transform="translate(-10, -5)">
+    <!-- Bulb Outline -->
+    <path d="M 740,30 C 730,30 725,40 725,50 C 725,58 732,63 735,68 L 735,74 L 745,74 L 745,68 C 748,63 755,58 755,50 C 755,40 750,30 740,30 Z" fill="#FFE600" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+    <!-- Filament & Base -->
+    <path d="M 735,52 Q 740,46 745,52 M 735,74 L 745,74 M 737,78 L 743,78 M 739,82 L 741,82" fill="none" stroke="#1A1A1A" stroke-width="1.5" />
+    <!-- Glow rays -->
+    <path d="M 718,36 L 710,32 M 762,36 L 770,32 M 712,50 L 704,50 M 768,50 L 776,50 M 740,18 L 740,10" fill="none" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" />
+  </g>
+
+  <!-- FRONTEND -->
+  <g transform="translate(35, 68)">
+    <!-- Shadow -->
+    <path d="M 6,6 Q 180,5 359,6 Q 360,42 359,78 Q 180,79 6,78 Q 5,42 6,6 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Box -->
+    <path d="M 0,0 Q 180,-1 353,0 Q 354,37 353,72 Q 180,73 0,72 Q -1,37 0,0 Z" fill="#FFFDF6" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="15" y="24" class="category-title">[Frontend]</text>
+    <path d="M 15,31 Q 120,30 200,31" fill="none" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3" />
+    <text x="15" y="52" class="skill-text">React · TypeScript · TailwindCSS · HTML5 · CSS3</text>
+  </g>
+
+  <!-- BACKEND & APIs -->
+  <g transform="translate(410, 68)">
+    <!-- Shadow -->
+    <path d="M 6,6 Q 180,5 359,6 Q 360,42 359,78 Q 180,79 6,78 Q 5,42 6,6 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Box -->
+    <path d="M 0,0 Q 180,-1 353,0 Q 354,37 353,72 Q 180,73 0,72 Q -1,37 0,0 Z" fill="#FFE600" fill-opacity="0.15" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="15" y="24" class="category-title">[Backend &amp; APIs]</text>
+    <path d="M 15,31 Q 120,30 200,31" fill="none" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3" />
+    <text x="15" y="52" class="skill-text">Node.js (Express) · Python (FastAPI/Django) · PHP · .NET</text>
+  </g>
+
+  <!-- DATA STORAGE -->
+  <g transform="translate(35, 154)">
+    <!-- Shadow -->
+    <path d="M 6,6 Q 180,5 359,6 Q 360,42 359,78 Q 180,79 6,78 Q 5,42 6,6 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Box -->
+    <path d="M 0,0 Q 180,-1 353,0 Q 354,37 353,72 Q 180,73 0,72 Q -1,37 0,0 Z" fill="#FFF2E2" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="15" y="24" class="category-title">[Databases]</text>
+    <path d="M 15,31 Q 120,30 200,31" fill="none" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3" />
+    <text x="15" y="52" class="skill-text">Supabase (PostgreSQL) · Firebase · MySQL · SQLite</text>
+  </g>
+
+  <!-- INTELLIGENCE & INFRA -->
+  <g transform="translate(410, 154)">
+    <!-- Shadow -->
+    <path d="M 6,6 Q 180,5 359,6 Q 360,42 359,78 Q 180,79 6,78 Q 5,42 6,6 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Box -->
+    <path d="M 0,0 Q 180,-1 353,0 Q 354,37 353,72 Q 180,73 0,72 Q -1,37 0,0 Z" fill="#FFDFDF" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="15" y="24" class="category-title">[AI &amp; Tools]</text>
+    <path d="M 15,31 Q 120,30 200,31" fill="none" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3" />
+    <text x="15" y="52" class="skill-text">Agentic pipelines · Gemini API · Whisper · Docker · Git</text>
+  </g>
+</svg>

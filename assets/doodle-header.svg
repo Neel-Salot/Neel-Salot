@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 230" width="100%">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Fredoka:wght@500;600;700&amp;display=swap');
+    
+    .doodle-title {
+      font-family: 'Caveat', cursive;
+      font-size: 56px;
+      font-weight: 700;
+      fill: #1A1A1A;
+    }
+    .doodle-sub {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      fill: #2C3E50;
+      letter-spacing: 0.5px;
+    }
+    .doodle-body {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
+      fill: #4A4A4A;
+    }
+    .doodle-badge {
+      font-family: 'Caveat', cursive;
+      font-size: 16px;
+      font-weight: 700;
+      fill: #1A1A1A;
+    }
+  </style>
+
+  <!-- Hand-drawn Shadow (Offset) -->
+  <path d="M 14,14 Q 400,12 790,14 Q 792,112 790,220 Q 400,222 14,220 Q 12,112 14,14 Z" fill="rgba(26, 26, 26, 0.15)" />
+
+  <!-- Hand-drawn Card Body (Wobbly Outline) -->
+  <path d="M 8,8 Q 400,6 784,8 Q 786,110 784,216 Q 400,218 8,216 Q 6,110 8,8 Z" fill="#FFFDF6" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Sketchy Stars -->
+  <!-- Left Star -->
+  <path d="M 32,25 L 36,33 L 44,34 L 38,40 L 40,48 L 32,44 L 24,48 L 26,40 L 20,34 L 28,33 Z" fill="#FFE600" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round" />
+  <!-- Mini Star -->
+  <path d="M 285,32 L 287,36 L 292,37 L 288,41 L 289,46 L 285,44 L 281,46 L 282,41 L 278,37 L 283,36 Z" fill="#FFE600" stroke="#1A1A1A" stroke-width="1.5" stroke-linejoin="round" />
+
+  <!-- Paper Airplane + Flight Path -->
+  <path d="M 625,75 Q 645,82 660,62 Q 675,42 688,52" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round" />
+  <path d="M 686,48 L 712,38 L 702,63 L 696,53 Z M 696,53 L 712,38" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Name -->
+  <text x="50" y="75" class="doodle-title">Neel Salot</text>
+
+  <!-- Tagline -->
+  <text x="50" y="112" class="doodle-sub">Full Stack Developer &amp; AI Builder</text>
+
+  <!-- Hand-drawn Location Sticker -->
+  <g transform="translate(635, 20) rotate(-4)">
+    <!-- Sticker shadow -->
+    <path d="M 4,4 Q 60,3 120,4 Q 121,14 120,24 Q 60,25 4,24 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Sticker outline -->
+    <path d="M 0,0 Q 60,-1 116,0 Q 117,12 116,22 Q 60,23 0,22 Z" fill="#FFDFDF" stroke="#1A1A1A" stroke-width="1.5" />
+    <text x="58" y="15" class="doodle-badge" text-anchor="middle">Surat, India 📍</text>
+  </g>
+
+  <!-- Squiggly Divider line -->
+  <path d="M 50,130 Q 200,127 350,131 Q 500,133 650,129 Q 700,128 730,131" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Bio Lines -->
+  <text x="50" y="158" class="doodle-body">B.Sc. IT student (CGPA 9.46) building end-to-end user products.</text>
+  <text x="50" y="180" class="doodle-body">Specializing in responsive React frontends and serverless AI workflows.</text>
+
+  <!-- Hand-drawn Status Badge (Bottom Right) -->
+  <g transform="translate(560, 150) rotate(1.5)">
+    <!-- Shadow -->
+    <path d="M 4,4 Q 95,3 190,4 Q 191,15 190,26 Q 95,27 4,26 Z" fill="rgba(0,0,0,0.1)" />
+    <!-- Status Card -->
+    <path d="M 0,0 Q 95,-1 186,0 Q 187,13 186,24 Q 95,25 0,24 Z" fill="#E8F6EF" stroke="#1A1A1A" stroke-width="1.5" />
+    <!-- Pulse dot -->
+    <circle cx="20" cy="12" r="4" fill="#00FF66" stroke="#1A1A1A" stroke-width="1" />
+    <text x="35" y="16" class="doodle-badge" font-size="14">Status: Open for work</text>
+  </g>
+</svg>

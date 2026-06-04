@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="100%">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Fredoka:wght@500;600;700&amp;display=swap');
+    
+    .card-title {
+      font-family: 'Caveat', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      fill: #1A1A1A;
+    }
+    .card-body {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #2C3E50;
+    }
+    .card-desc {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 10.5px;
+      font-weight: 500;
+      fill: #4A4A4A;
+    }
+    .btn-text {
+      font-family: 'Caveat', cursive;
+      font-size: 14px;
+      font-weight: 700;
+      fill: #1A1A1A;
+    }
+  </style>
+
+  <!-- Shadow -->
+  <path d="M 12,12 Q 120,10 238,12 Q 240,98 238,188 Q 120,190 12,188 Q 10,98 12,12 Z" fill="rgba(26, 26, 26, 0.12)" />
+
+  <!-- Box -->
+  <path d="M 6,6 Q 115,4 230,6 Q 232,95 230,182 Q 115,184 6,182 Q 4,95 6,6 Z" fill="#FFF2E2" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Brain Cloud Doodle (Top Right) -->
+  <g transform="translate(15, 0)">
+    <path d="M 175,26 C 170,20 160,24 163,30 C 155,30 154,42 165,45 C 168,52 180,48 180,45 C 188,42 184,30 178,30 C 182,24 175,18 175,26 Z" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 166,32 Q 170,36 174,32 M 169,38 Q 172,40 176,36" fill="none" stroke="#1A1A1A" stroke-width="1" />
+  </g>
+
+  <!-- Content -->
+  <text x="20" y="32" class="card-title">1. Momentum AI</text>
+  <path d="M 20,42 Q 90,40 160,42" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+  
+  <!-- Custom Sketchy Checkmark Bullets -->
+  <g transform="translate(20, 56)">
+    <!-- Checkmark 1 -->
+    <path d="M 0,5 L 3,8 L 8,1" fill="none" stroke="#00FF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="16" y="8" class="card-body">Meeting Analytics System</text>
+    
+    <!-- Checkmark 2 -->
+    <path d="M 0,22 L 3,25 L 8,18" fill="none" stroke="#00FF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="16" y="25" class="card-body">Whisper + Gemini + Supabase</text>
+    
+    <!-- Checkmark 3 -->
+    <path d="M 0,39 L 3,42 L 8,35" fill="none" stroke="#00FF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="16" y="42" class="card-body">Built in a 48hr hackathon</text>
+  </g>
+  
+  <text x="20" y="125" class="card-desc" font-style="italic">"Automatically transcribes and</text>
+  <text x="20" y="140" class="card-desc" font-style="italic">extracts action items from meeting</text>
+  <text x="20" y="155" class="card-desc" font-style="italic">audio logs instantly."</text>
+  
+  <!-- Button Sticker -->
+  <g transform="translate(20, 163)">
+    <path d="M 2,2 Q 45,1 90,2 Q 91,8 90,14 Q 45,15 2,14 Z" fill="rgba(0,0,0,0.1)" />
+    <path d="M 0,0 Q 45,-1 86,0 Q 87,7 86,12 Q 45,13 0,12 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" />
+    <text x="43" y="9" class="btn-text" text-anchor="middle">View Repo ➔</text>
+  </g>
+</svg>
