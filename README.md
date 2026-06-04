@@ -1,20 +1,36 @@
 # 🌌 NEEL SALOT // FULL STACK DEVELOPER & AI BUILDER
 
 <div align="center">
-  <!-- Introduction Header Card -->
-  <img src="assets/brutalist-header.svg" alt="Neel Salot - Systems Operator Profile" width="100%" />
+  <!-- Introduction Header Card (Links to LinkedIn) -->
+  <a href="https://linkedin.com/in/neel-salot" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-header.svg" alt="Neel Salot - Full Stack Developer &amp; AI Builder" width="100%" />
+  </a>
   <br><br>
   
-  <!-- Clickable Projects Showcase Card -->
-  <img src="assets/brutalist-projects.svg" alt="Neel Salot - Project Builds Node" width="100%" />
+  <!-- Clickable Projects Showcase Grid (Each card links directly to its respective repo) -->
+  <a href="https://github.com/yugamm15/momentum-ai" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-project-momentum.svg" alt="Momentum AI Repository" width="32%" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/meghmodi2810/KairoAI" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-project-kairo.svg" alt="KairoAI Repository" width="32%" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/meghmodi2810/DailyNest" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-project-dailynest.svg" alt="DailyNest Repository" width="32%" />
+  </a>
   <br><br>
   
-  <!-- Technical Skills dependency Card -->
-  <img src="assets/brutalist-skills.svg" alt="Neel Salot - Core Tech Matrix" width="100%" />
+  <!-- Technical Skills Card (Links to GitHub) -->
+  <a href="https://github.com/Neel-Salot" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-skills.svg" alt="Neel Salot - Technical Skills" width="100%" />
+  </a>
   <br><br>
   
-  <!-- Academic Credentials & Research Logs Card -->
-  <img src="assets/brutalist-credentials.svg" alt="Neel Salot - Academic specs &amp; publications" width="100%" />
+  <!-- Academic Credentials & Research Card (Links to LinkedIn) -->
+  <a href="https://linkedin.com/in/neel-salot" target="_blank" rel="noopener noreferrer">
+    <img src="assets/brutalist-credentials.svg" alt="Neel Salot - Education &amp; Publications" width="100%" />
+  </a>
 </div>
 
 ---
