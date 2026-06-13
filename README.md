@@ -1,8 +1,10 @@
 # NEEL SALOT
 
-### Full Stack Developer · AI Builder · Systems Thinker
+<div align="center">
 
-<br>
+![Neel Salot - Full Stack Developer](assets/header-3d-world.svg)
+
+</div>
 
 ---
 
@@ -13,7 +15,7 @@ Meeting Intelligence & Execution System
 
 Built in 48 hours at OceanLab × CHARUSAT Hackathon. AI pipeline that ingests meeting audio and outputs structured tasks, decisions, and risk flags.
 
-![Momentum AI](assets/project-momentum-animated.svg)
+`Whisper → Gemini → Supabase → React Dashboard`
 
 ---
 
@@ -22,7 +24,7 @@ Indian Sign Language Learning Platform
 
 Published at ACAI-2026, National Conference on AI. Real-time gesture feedback using MediaPipe and TensorFlow Lite.
 
-![Kairo AI](assets/project-kairoai-animated.svg)
+`Flutter · Firebase · MediaPipe · TensorFlow Lite`
 
 ---
 
@@ -31,7 +33,7 @@ AI Autism Support Platform
 
 Best Research Paper Award at Student Conference on Self-Reliant India. Multi-module system with AI pattern detection for stress triggers.
 
-![DailyNest](assets/project-dailynest-animated.svg)
+`Python · Django · CNN · ML · NLP`
 
 ---
 
