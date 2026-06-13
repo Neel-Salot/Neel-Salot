@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320">
+  <defs>
+    <!-- Warm elegant gradients -->
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f5f2ed"/>
+    </linearGradient>
+    
+    <linearGradient id="elegantLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#3a3a3a"/>
+    </linearGradient>
+
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1a1a1a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Warm cream background -->
+  <rect width="900" height="320" fill="url(#warmBg)"/>
+
+  <!-- Subtle texture dots -->
+  <g fill="#e8e4df" opacity="0.4">
+    <circle cx="50" cy="50" r="1"/>
+    <circle cx="150" cy="80" r="1"/>
+    <circle cx="250" cy="30" r="1"/>
+    <circle cx="350" cy="70" r="1"/>
+    <circle cx="450" cy="40" r="1"/>
+    <circle cx="550" cy="60" r="1"/>
+    <circle cx="650" cy="35" r="1"/>
+    <circle cx="750" cy="75" r="1"/>
+    <circle cx="850" cy="45" r="1"/>
+    <circle cx="100" cy="280" r="1"/>
+    <circle cx="200" cy="300" r="1"/>
+    <circle cx="400" cy="290" r="1"/>
+    <circle cx="600" cy="285" r="1"/>
+    <circle cx="800" cy="295" r="1"/>
+  </g>
+
+  <!-- Elegant top line -->
+  <line x1="50" y1="40" x2="850" y2="40" stroke="url(#elegantLine)" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Main name - sophisticated serif-adjacent -->
+  <text x="450" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="400" fill="#1a1a1a" text-anchor="middle" letter-spacing="8" filter="url(#subtleShadow)">
+    NEEL SALOT
+  </text>
+
+  <!-- Delicate underline - short and refined -->
+  <line x1="350" y1="138" x2="550" y2="138" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>
+
+  <!-- Tagline - light, airy -->
+  <text x="450" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle" letter-spacing="5" font-weight="300">
+    FULL STACK · AI BUILDER · SYSTEMS THINKER
+  </text>
+
+  <!-- Location marker - minimal -->
+  <g transform="translate(400, 195)">
+    <circle cx="50" cy="8" r="4" fill="none" stroke="#8a8a8a" stroke-width="1"/>
+    <circle cx="50" cy="8" r="1.5" fill="#8a8a8a"/>
+  </g>
+  <text x="450" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#9a9a9a" text-anchor="middle" letter-spacing="3">
+    SURAT, GUJARAT
+  </text>
+
+  <!-- Bottom elegant divider -->
+  <line x1="50" y1="280" x2="850" y2="280" stroke="#1a1a1a" stroke-width="0.3" opacity="0.15"/>
+
+  <!-- Subtle corner marks - editorial touch -->
+  <text x="50" y="295" font-family="Georgia, serif" font-size="8" fill="#c0c0c0" letter-spacing="1">—</text>
+  <text x="840" y="295" font-family="Georgia, serif" font-size="8" fill="#c0c0c0" letter-spacing="1">—</text>
+
+</svg>

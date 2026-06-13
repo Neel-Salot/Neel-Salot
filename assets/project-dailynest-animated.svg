@@ -1,173 +1,181 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
   <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Warm editorial palette -->
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f5f2ed"/>
+    </linearGradient>
+    
+    <!-- Accent colors - warm and caring palette -->
+    <linearGradient id="lavenderAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9575cd"/>
+      <stop offset="100%" stop-color="#b39ddb"/>
+    </linearGradient>
+    
+    <linearGradient id="coralWarmAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="100%" stop-color="#ffab91"/>
+    </linearGradient>
+    
+    <linearGradient id="mintAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4db6ac"/>
+      <stop offset="100%" stop-color="#80cbc4"/>
+    </linearGradient>
+
+    <!-- Soft shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1a1a1a" flood-opacity="0.06"/>
     </filter>
-    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a1a"/>
-      <stop offset="100%" stop-color="#1a1a2e"/>
-    </linearGradient>
-    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22c55e"/>
-      <stop offset="50%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#22c55e"/>
-    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="600" height="340" fill="url(#bgGrad3)" rx="12"/>
+  <!-- Warm background -->
+  <rect width="600" height="340" fill="url(#warmBg)" rx="12"/>
 
-  <!-- Animated background circles -->
-  <circle cx="300" cy="100" r="80" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.1">
-    <animate attributeName="r" values="80;100;80" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="300" cy="100" r="60" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.15">
-    <animate attributeName="r" values="60;75;60" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="300" cy="100" r="40" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.2">
-    <animate attributeName="r" values="40;50;40" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Subtle paper texture -->
+  <g fill="#e8e4df" opacity="0.3">
+    <circle cx="50" cy="50" r="1"/>
+    <circle cx="150" cy="80" r="1"/>
+    <circle cx="250" cy="30" r="1"/>
+    <circle cx="350" cy="70" r="1"/>
+    <circle cx="450" cy="40" r="1"/>
+    <circle cx="550" cy="60" r="1"/>
+    <circle cx="100" cy="300" r="1"/>
+    <circle cx="300" cy="320" r="1"/>
+    <circle cx="500" cy="290" r="1"/>
+  </g>
 
-  <!-- Central AI brain -->
-  <g transform="translate(260, 50)">
-    <animateTransform attributeName="transform" type="translate" values="260,50;260,47;260,50" dur="3s" repeatCount="indefinite"/>
-    <circle cx="40" cy="50" r="25" fill="#0a0a1a" stroke="#22c55e" stroke-width="2"/>
-    <circle cx="40" cy="50" r="25" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.4">
-      <animate attributeName="r" values="25;30;25" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <!-- Brain pattern inside -->
-    <g stroke="#22c55e" stroke-width="1" fill="none" opacity="0.6">
-      <path d="M30,40 Q40,35 50,40">
-        <animate attributeName="d" values="M30,40 Q40,35 50,40;M30,40 Q40,30 50,40;M30,40 Q40,35 50,40" dur="2s" repeatCount="indefinite"/>
-      </path>
-      <path d="M30,50 Q40,55 50,50">
-        <animate attributeName="d" values="M30,50 Q40,55 50,50;M30,50 Q40,60 50,50;M30,50 Q40,55 50,50" dur="2s" repeatCount="indefinite"/>
-      </path>
-      <path d="M35,45 L45,45"/>
-      <circle cx="35" cy="45" r="3" fill="#22c55e" opacity="0.8">
-        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  <!-- AI Brain pattern detection area -->
+  <g transform="translate(30, 25)">
+    <text x="0" y="15" font-family="Georgia, serif" font-size="10" fill="#8a8a8a" letter-spacing="1">PATTERN ANALYSIS</text>
+    
+    <!-- Animated neural network nodes -->
+    <g transform="translate(10, 35)">
+      <!-- Central node -->
+      <circle cx="50" cy="30" r="12" fill="white" stroke="url(#lavenderAccent)" stroke-width="2"/>
+      <circle cx="50" cy="30" r="6" fill="#b39ddb">
+        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#b39ddb;#9575cd;#b39ddb" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="45" cy="45" r="3" fill="#22c55e" opacity="0.8">
-        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite" begin="0.5s"/>
-      </circle>
-      <circle cx="40" cy="45" r="3" fill="#22c55e" opacity="0.8">
-        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite" begin="0.25s"/>
-      </circle>
+      
+      <!-- Surrounding nodes with pulsing animation -->
+      <g stroke="#d4d4d4" stroke-width="1">
+        <line x1="50" y1="18" x2="50" y2="10"/>
+        <circle cx="50" cy="8" r="4" fill="#ff8a65">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        
+        <line x1="58" y1="26" x2="66" y2="22"/>
+        <circle cx="68" cy="20" r="4" fill="#4db6ac">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+        </circle>
+        
+        <line x1="42" y1="26" x2="34" y2="22"/>
+        <circle cx="32" cy="20" r="4" fill="#b39ddb">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+        </circle>
+        
+        <line x1="58" y1="34" x2="66" y2="38"/>
+        <circle cx="68" cy="40" r="4" fill="#ff8a65">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="0.9s"/>
+        </circle>
+        
+        <line x1="42" y1="34" x2="34" y2="38"/>
+        <circle cx="32" cy="40" r="4" fill="#4db6ac">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="1.2s"/>
+        </circle>
+      </g>
+    </g>
+    
+    <!-- Stress level indicator -->
+    <g transform="translate(100, 35)">
+      <rect x="0" y="0" width="70" height="25" rx="4" fill="white" stroke="#e8e4df" stroke-width="1"/>
+      <text x="15" y="16" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">Stress:</text>
+      <rect x="40" y="8" width="20" height="8" rx="4" fill="#ff8a65" opacity="0.3"/>
+      <rect x="40" y="8" width="8" height="8" rx="4" fill="#4db6ac">
+        <animate attributeName="width" values="8;12;8" dur="3s" repeatCount="indefinite"/>
+      </rect>
     </g>
   </g>
 
-  <!-- AI PULSE label -->
-  <text x="300" y="130" font-family="monospace" font-size="9" fill="#22c55e" text-anchor="middle" letter-spacing="2">
-    ◉ AI PATTERN DETECTION ACTIVE
-  </text>
+  <!-- Module flow -->
+  <g transform="translate(30, 100)">
+    <!-- Flow arrows -->
+    <line x1="100" y1="25" x2="160" y2="25" stroke="#d4d4d4" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="100" cy="25" r="3" fill="url(#lavenderAccent)">
+      <animate attributeName="cx" values="100;150" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <line x1="280" y1="25" x2="340" y2="25" stroke="#d4d4d4" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="280" cy="25" r="3" fill="url(#coralWarmAccent)">
+      <animate attributeName="cx" values="280;330" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+    </circle>
+  </g>
 
-  <!-- Four module nodes -->
-  <g transform="translate(30, 150)">
-    <!-- Day Planner -->
+  <!-- Platform nodes -->
+  <g transform="translate(30, 130)">
+    <!-- CNN node -->
+    <rect x="0" y="0" width="140" height="50" rx="8" fill="white" stroke="#9575cd" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="70" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">CNN</text>
+    <text x="70" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">Pattern Detection</text>
+  </g>
+
+  <!-- ML node -->
+  <g transform="translate(200, 130)">
+    <rect x="0" y="0" width="140" height="50" rx="8" fill="white" stroke="#ff8a65" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="70" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">ML Engine</text>
+    <text x="70" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">Stress Analysis</text>
+  </g>
+
+  <!-- NLP node -->
+  <g transform="translate(370, 130)">
+    <rect x="0" y="0" width="140" height="50" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="70" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">NLP</text>
+    <text x="70" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">Sentiment</text>
+  </g>
+
+  <!-- Support modules -->
+  <g transform="translate(30, 200)">
+    <text x="0" y="15" font-family="Georgia, serif" font-size="11" fill="#4a4a4a">Support Modules</text>
+    
+    <!-- Module cards -->
     <g>
-      <rect x="0" y="0" width="120" height="50" rx="6" fill="#0a0a1a" stroke="#50fa7b" stroke-width="1.5" opacity="0.9">
-        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
-      </rect>
-      <text x="60" y="20" font-family="monospace" font-size="10" fill="#50fa7b" text-anchor="middle" font-weight="bold">DAY PLANNER</text>
-      <text x="60" y="36" font-family="monospace" font-size="8" fill="#5a7a6a" text-anchor="middle">Visual routine builder</text>
+      <rect x="0" y="25" width="165" height="55" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="55" rx="2" fill="url(#lavenderAccent)"/>
+      <text x="15" y="45" font-family="-apple-system, sans-serif" font-size="10" fill="#9575cd" font-weight="500">Daily Journal</text>
+      <text x="15" y="62" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a">Track emotions</text>
     </g>
 
-    <!-- Emotion Tracker -->
-    <g transform="translate(130, 0)">
-      <rect x="0" y="0" width="120" height="50" rx="6" fill="#0a0a1a" stroke="#a855f7" stroke-width="1.5" opacity="0.9">
-        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" begin="0.3s"/>
-      </rect>
-      <text x="60" y="20" font-family="monospace" font-size="10" fill="#a855f7" text-anchor="middle" font-weight="bold">EMOTION</text>
-      <text x="60" y="36" font-family="monospace" font-size="8" fill="#6a5a8a" text-anchor="middle">Regulation support</text>
+    <g>
+      <rect x="180" y="25" width="165" height="55" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="180" y="25" width="4" height="55" rx="2" fill="url(#coralWarmAccent)"/>
+      <text x="195" y="45" font-family="-apple-system, sans-serif" font-size="10" fill="#ff8a65" font-weight="500">Trigger Alerts</text>
+      <text x="195" y="62" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a">Pattern detection</text>
     </g>
 
-    <!-- Communication Assistant -->
-    <g transform="translate(260, 0)">
-      <rect x="0" y="0" width="140" height="50" rx="6" fill="#0a0a1a" stroke="#ff6b9d" stroke-width="1.5" opacity="0.9">
-        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" begin="0.6s"/>
-      </rect>
-      <text x="70" y="20" font-family="monospace" font-size="10" fill="#ff6b9d" text-anchor="middle" font-weight="bold">COMM ASST</text>
-      <text x="70" y="36" font-family="monospace" font-size="8" fill="#8a5a6a" text-anchor="middle">Communication support</text>
+    <g>
+      <rect x="360" y="25" width="165" height="55" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="360" y="25" width="4" height="55" rx="2" fill="url(#mintAccent)"/>
+      <text x="375" y="45" font-family="-apple-system, sans-serif" font-size="10" fill="#4db6ac" font-weight="500">Caregiver Hub</text>
+      <text x="375" y="62" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a">Family support</text>
     </g>
-
-    <!-- Caregiver Dashboard -->
-    <g transform="translate(410, 0)">
-      <rect x="0" y="0" width="140" height="50" rx="6" fill="#0a0a1a" stroke="#fbbf24" stroke-width="1.5" opacity="0.9">
-        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" begin="0.9s"/>
-      </rect>
-      <text x="70" y="20" font-family="monospace" font-size="10" fill="#fbbf24" text-anchor="middle" font-weight="bold">CAREGIVER</text>
-      <text x="70" y="36" font-family="monospace" font-size="8" fill="#7a6a5a" text-anchor="middle">Analytics dashboard</text>
-    </g>
-  </g>
-
-  <!-- Connection lines from AI to modules -->
-  <g stroke="#22c55e" stroke-width="1" fill="none" opacity="0.3">
-    <line x1="300" y1="125" x2="90" y2="175">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
-    </line>
-    <line x1="300" y1="125" x2="190" y2="175">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.3s"/>
-    </line>
-    <line x1="300" y1="125" x2="330" y2="175">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.6s"/>
-    </line>
-    <line x1="300" y1="125" x2="480" y2="175">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.9s"/>
-    </line>
-  </g>
-
-  <!-- Stress pattern chart -->
-  <g transform="translate(30, 220)">
-    <text x="0" y="0" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="1">// STRESS TRIGGER PATTERN DETECTION</text>
-
-    <rect x="0" y="10" width="540" height="45" rx="6" fill="#0a0a1a" stroke="#2a2a4a" stroke-width="1"/>
-
-    <!-- Animated wave pattern -->
-    <polyline points="10,45 50,45 70,30 90,50 110,35 130,45 150,30 170,50 190,35 210,45 230,30 250,50 270,35 290,45 310,30 330,50 350,35 370,45 390,30 410,50 430,35 450,45 470,30 490,50 510,35 530,45"
-      fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.6">
-      <animate attributeName="points"
-        values="10,45 50,45 70,30 90,50 110,35 130,45 150,30 170,50 190,35 210,45 230,30 250,50 270,35 290,45 310,30 330,50 350,35 370,45 390,30 410,50 430,35 450,45 470,30 490,50 510,35 530,45;
-               10,45 50,30 70,45 90,35 110,50 130,35 150,45 170,30 190,50 210,35 230,45 250,30 270,50 290,35 310,45 330,30 350,50 370,35 390,45 410,30 430,50 450,35 470,45 490,30 510,50 530,35;
-               10,45 50,45 70,30 90,50 110,35 130,45 150,30 170,50 190,35 210,45 230,30 250,50 270,35 290,45 310,30 330,50 350,35 370,45 390,30 410,50 430,35 450,45 470,30 490,50 510,35 530,45"
-        dur="4s" repeatCount="indefinite"/>
-    </polyline>
-
-    <!-- Alert dot - pulsing -->
-    <circle cx="330" cy="35" r="5" fill="#ff6b9d" opacity="0.8" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Alert label -->
-    <text x="340" y="38" font-family="monospace" font-size="8" fill="#ff6b9d">⚠ PATTERN DETECTED</text>
   </g>
 
   <!-- Award badge -->
-  <g transform="translate(30, 280)">
-    <rect x="0" y="0" width="200" height="45" rx="6" fill="#0a0a1a" stroke="#fbbf24" stroke-width="1.5" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
-    </rect>
-    <text x="100" y="18" font-family="monospace" font-size="10" fill="#fbbf24" text-anchor="middle" font-weight="bold">★ BEST RESEARCH PAPER</text>
-    <text x="100" y="32" font-family="monospace" font-size="8" fill="#7a6a4a" text-anchor="middle">Student Conf on Self-Reliant India</text>
+  <g transform="translate(30, 290)">
+    <rect x="0" y="0" width="540" height="35" rx="6" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+    
+    <circle cx="25" cy="17" r="8" fill="#d4a373" opacity="0.2"/>
+    <text x="25" y="21" font-family="-apple-system, sans-serif" font-size="8" fill="#d4a373" text-anchor="middle" font-weight="600">★</text>
+    
+    <text x="50" y="21" font-family="-apple-system, sans-serif" font-size="11" fill="#4a4a4a">Best Research Paper Award — Student Conference on Self-Reliant India</text>
+    
+    <text x="510" y="21" font-family="Georgia, serif" font-size="10" fill="#81b29a" text-anchor="end">
+      <tspan fill="#d4a373">●</tspan> Published
+    </text>
   </g>
 
-  <!-- Stack info -->
-  <g transform="translate(240, 280)">
-    <rect x="0" y="0" width="330" height="45" rx="6" fill="#0a0a1a" stroke="#2a2a4a" stroke-width="1"/>
-    <text x="165" y="18" font-family="monospace" font-size="9" fill="#5a5a7a" text-anchor="middle">Python · Django · CNN · ML · NLP</text>
-    <text x="165" y="35" font-family="monospace" font-size="8" fill="#4a4a5a" text-anchor="middle">AI-powered pattern detection · Stress trigger identification · Proactive interventions</text>
-  </g>
-
-  <!-- Title -->
-  <text x="300" y="328" font-family="monospace" font-size="10" fill="#3a3a5a" text-anchor="middle">DAILYNEST — AI Autism Support Platform</text>
-
-  <!-- Corner decorations -->
-  <circle cx="15" cy="325" r="3" fill="#50fa7b" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="585" cy="325" r="3" fill="#fbbf24" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
-  </circle>
+  <!-- Title footer -->
+  <text x="300" y="332" font-family="Georgia, serif" font-size="10" fill="#8a8a8a" text-anchor="middle" letter-spacing="0.5">DailyNest — AI-Powered Autism Support</text>
 </svg>

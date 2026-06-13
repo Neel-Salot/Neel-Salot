@@ -1,224 +1,179 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
   <defs>
-    <!-- Glowing effects -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Warm editorial palette -->
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f5f2ed"/>
+    </linearGradient>
+    
+    <!-- Subtle accent gradients -->
+    <linearGradient id="coralAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e07a5f"/>
+      <stop offset="100%" stop-color="#f4a261"/>
+    </linearGradient>
+    
+    <linearGradient id="sageAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#81b29a"/>
+      <stop offset="100%" stop-color="#9fc5a6"/>
+    </linearGradient>
+    
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4a373"/>
+      <stop offset="100%" stop-color="#e9c46a"/>
+    </linearGradient>
+
+    <!-- Soft shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1a1a1a" flood-opacity="0.06"/>
     </filter>
-    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+    
+    <!-- Elegant glow for accent elements -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <!-- Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a1a"/>
-      <stop offset="100%" stop-color="#1a1a2e"/>
-    </linearGradient>
-    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00d4ff"/>
-      <stop offset="100%" stop-color="#00f5d4"/>
-    </linearGradient>
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#ec4899"/>
-    </linearGradient>
-    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22c55e"/>
-      <stop offset="100%" stop-color="#10b981"/>
-    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="600" height="340" fill="url(#bgGrad)" rx="12"/>
+  <!-- Warm background -->
+  <rect width="600" height="340" fill="url(#warmBg)" rx="12"/>
 
-  <!-- Animated grid lines -->
-  <g stroke="#1e1e3e" stroke-width="0.5">
-    <line x1="0" y1="60" x2="600" y2="60">
-      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
-    </line>
-    <line x1="0" y1="120" x2="600" y2="120"/>
-    <line x1="0" y1="180" x2="600" y2="180"/>
-    <line x1="0" y1="240" x2="600" y2="240"/>
-    <line x1="0" y1="300" x2="600" y2="300"/>
-    <line x1="100" y1="0" x2="100" y2="340"/>
-    <line x1="200" y1="0" x2="200" y2="340"/>
-    <line x1="300" y1="0" x2="300" y2="340"/>
-    <line x1="400" y1="0" x2="400" y2="340"/>
-    <line x1="500" y1="0" x2="500" y2="340"/>
+  <!-- Subtle paper texture -->
+  <g fill="#e8e4df" opacity="0.3">
+    <circle cx="50" cy="50" r="1"/>
+    <circle cx="150" cy="80" r="1"/>
+    <circle cx="250" cy="30" r="1"/>
+    <circle cx="350" cy="70" r="1"/>
+    <circle cx="450" cy="40" r="1"/>
+    <circle cx="550" cy="60" r="1"/>
+    <circle cx="100" cy="300" r="1"/>
+    <circle cx="300" cy="320" r="1"/>
+    <circle cx="500" cy="290" r="1"/>
   </g>
 
-  <!-- Audio waveform animation -->
-  <g transform="translate(30, 30)">
-    <text x="0" y="12" font-family="monospace" font-size="9" fill="#4a4a6a" letter-spacing="1">◉ TRANSCRIBING AUDIO</text>
-    <g transform="translate(0, 20)">
-      <rect x="0" y="15" width="4" height="20" rx="2" fill="#00d4ff" opacity="0.8">
-        <animate attributeName="height" values="10;25;15;20;10;25;20;15" dur="0.8s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="20;10;17;15;20;10;15;17" dur="0.8s" repeatCount="indefinite"/>
+  <!-- Audio waveform animation area -->
+  <g transform="translate(30, 25)">
+    <text x="0" y="15" font-family="Georgia, serif" font-size="10" fill="#8a8a8a" letter-spacing="1">TRANSCRIBING</text>
+    
+    <!-- Animated waveform bars -->
+    <g transform="translate(0, 25)">
+      <rect x="0" y="8" width="3" height="16" rx="1.5" fill="#e07a5f" opacity="0.7">
+        <animate attributeName="height" values="8;20;12;16;8;20;16;12" dur="0.8s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="12;0;10;8;12;0;8;10" dur="0.8s" repeatCount="indefinite"/>
       </rect>
-      <rect x="8" y="10" width="4" height="30" rx="2" fill="#00d4ff" opacity="0.7">
-        <animate attributeName="height" values="20;10;25;15;20;10;15;25" dur="0.6s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="15;25;10;20;15;25;20;10" dur="0.6s" repeatCount="indefinite"/>
+      <rect x="7" y="5" width="3" height="22" rx="1.5" fill="#e07a5f" opacity="0.8">
+        <animate attributeName="height" values="16;8;20;12;16;8;12;20" dur="0.6s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="8;12;6;10;8;12;10;6" dur="0.6s" repeatCount="indefinite"/>
       </rect>
-      <rect x="16" y="8" width="4" height="34" rx="2" fill="#00d4ff" opacity="0.9">
-        <animate attributeName="height" values="15;30;20;25;15;30;25;20" dur="0.7s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="17;7;15;12;17;7;12;15" dur="0.7s" repeatCount="indefinite"/>
+      <rect x="14" y="3" width="3" height="26" rx="1.5" fill="#e07a5f" opacity="0.9">
+        <animate attributeName="height" values="12;24;18;20;12;24;20;18" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="10;0;7;6;10;0;6;7" dur="0.7s" repeatCount="indefinite"/>
       </rect>
-      <rect x="24" y="12" width="4" height="26" rx="2" fill="#00d4ff" opacity="0.6">
-        <animate attributeName="height" values="25;12;30;18;25;12;18;30" dur="0.9s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="12;23;10;16;12;23;16;10" dur="0.9s" repeatCount="indefinite"/>
+      <rect x="21" y="6" width="3" height="20" rx="1.5" fill="#e07a5f" opacity="0.75">
+        <animate attributeName="height" values="20;10;24;14;20;10;14;24" dur="0.9s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="6;12;4;9;6;12;9;4" dur="0.9s" repeatCount="indefinite"/>
       </rect>
-      <rect x="32" y="5" width="4" height="40" rx="2" fill="#00d4ff" opacity="0.8">
-        <animate attributeName="height" values="18;35;22;30;18;35;30;22" dur="0.5s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="16;7;14;10;16;7;10;14" dur="0.5s" repeatCount="indefinite"/>
+      <rect x="28" y="2" width="3" height="28" rx="1.5" fill="#e07a5f" opacity="0.85">
+        <animate attributeName="height" values="14;26;18;22;14;26;22;18" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="9;0;8;5;9;0;5;8" dur="0.5s" repeatCount="indefinite"/>
       </rect>
-      <rect x="40" y="10" width="4" height="30" rx="2" fill="#00d4ff" opacity="0.7">
-        <animate attributeName="height" values="22;15;28;20;22;15;20;28" dur="0.7s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="14;17;11;15;14;17;15;11" dur="0.7s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="48" y="13" width="4" height="24" rx="2" fill="#00d4ff" opacity="0.6">
-        <animate attributeName="height" values="30;18;25;22;30;18;22;25" dur="0.6s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="10;16;12;14;10;16;14;12" dur="0.6s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="56" y="7" width="4" height="36" rx="2" fill="#00d4ff" opacity="0.9">
-        <animate attributeName="height" values="20;32;25;28;20;32;28;25" dur="0.8s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="15;9;12;11;15;9;11;12" dur="0.8s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="64" y="11" width="4" height="28" rx="2" fill="#00d4ff" opacity="0.7">
-        <animate attributeName="height" values="28;20;18;30;28;20;30;18" dur="0.5s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="11;15;16;10;11;15;10;16" dur="0.5s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="72" y="9" width="4" height="32" rx="2" fill="#00d4ff" opacity="0.8">
-        <animate attributeName="height" values="15;28;22;25;15;28;25;22" dur="0.7s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="17;11;14;12;17;11;12;14" dur="0.7s" repeatCount="indefinite"/>
+      <rect x="35" y="4" width="3" height="24" rx="1.5" fill="#e07a5f" opacity="0.7">
+        <animate attributeName="height" values="18;12;22;16;18;12;16;22" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="7;10;5;8;7;10;8;5" dur="0.7s" repeatCount="indefinite"/>
       </rect>
     </g>
   </g>
 
-  <!-- Flow arrows - animated -->
-  <g transform="translate(30, 85)">
-    <path d="M0,10 L80,10" stroke="url(#cyanGrad)" stroke-width="2" stroke-dasharray="6,4" fill="none">
-      <animate attributeName="stroke-dashoffset" values="0;-20" dur="1s" repeatCount="indefinite"/>
-    </path>
-    <polygon points="80,6 90,10 80,14" fill="#00d4ff" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
-    </polygon>
+  <!-- Pipeline flow - elegant arrows -->
+  <g transform="translate(30, 90)">
+    <line x1="60" y1="20" x2="140" y2="20" stroke="#d4d4d4" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="60" cy="20" r="4" fill="url(#coralAccent)">
+      <animate attributeName="cx" values="60;130" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <line x1="220" y1="20" x2="300" y2="20" stroke="#d4d4d4" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="220" cy="20" r="4" fill="url(#sageAccent)">
+      <animate attributeName="cx" values="220;290" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+    </circle>
+    
+    <line x1="380" y1="20" x2="460" y2="20" stroke="#d4d4d4" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="380" cy="20" r="4" fill="url(#goldAccent)">
+      <animate attributeName="cx" values="380;450" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+    </circle>
   </g>
 
-  <!-- WHISPER NODE -->
-  <g transform="translate(30, 100)">
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1.5"/>
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <text x="60" y="20" font-family="monospace" font-size="11" fill="#00d4ff" text-anchor="middle" font-weight="bold">WHISPER</text>
-    <text x="60" y="35" font-family="monospace" font-size="8" fill="#4a6a8a" text-anchor="middle">Transcription</text>
+  <!-- Node 1: Whisper -->
+  <g transform="translate(30, 115)">
+    <rect x="0" y="0" width="130" height="50" rx="8" fill="white" stroke="#e07a5f" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="65" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">Whisper</text>
+    <text x="65" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">Transcription</text>
   </g>
 
-  <!-- Arrow 1 -->
-  <g transform="translate(155, 115)">
-    <path d="M0,15 L40,15" stroke="#a855f7" stroke-width="2" stroke-dasharray="6,4" fill="none">
-      <animate attributeName="stroke-dashoffset" values="0;-20" dur="0.8s" repeatCount="indefinite"/>
-    </path>
-    <polygon points="40,11 50,15 40,19" fill="#a855f7" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.8s" repeatCount="indefinite"/>
-    </polygon>
+  <!-- Node 2: Gemini -->
+  <g transform="translate(195, 115)">
+    <rect x="0" y="0" width="130" height="50" rx="8" fill="white" stroke="#81b29a" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="65" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">Gemini</text>
+    <text x="65" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">AI Extraction</text>
   </g>
 
-  <!-- GEMINI NODE -->
-  <g transform="translate(200, 100)">
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="#0a0a1a" stroke="#a855f7" stroke-width="1.5"/>
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.3s"/>
-    </rect>
-    <text x="60" y="20" font-family="monospace" font-size="11" fill="#a855f7" text-anchor="middle" font-weight="bold">GEMINI</text>
-    <text x="60" y="35" font-family="monospace" font-size="8" fill="#6a4a8a" text-anchor="middle">AI Extraction</text>
+  <!-- Node 3: Supabase -->
+  <g transform="translate(360, 115)">
+    <rect x="0" y="0" width="130" height="50" rx="8" fill="white" stroke="#d4a373" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="65" y="22" font-family="Georgia, serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">Supabase</text>
+    <text x="65" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="middle">Storage</text>
   </g>
 
-  <!-- Arrow 2 -->
-  <g transform="translate(325, 115)">
-    <path d="M0,15 L40,15" stroke="#22c55e" stroke-width="2" stroke-dasharray="6,4" fill="none">
-      <animate attributeName="stroke-dashoffset" values="0;-20" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-    <polygon points="40,11 50,15 40,19" fill="#22c55e" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.6s" repeatCount="indefinite"/>
-    </polygon>
-  </g>
-
-  <!-- SUPABASE NODE -->
-  <g transform="translate(370, 100)">
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="#0a0a1a" stroke="#22c55e" stroke-width="1.5"/>
-    <rect x="0" y="0" width="120" height="45" rx="6" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.6s"/>
-    </rect>
-    <text x="60" y="20" font-family="monospace" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">SUPABASE</text>
-    <text x="60" y="35" font-family="monospace" font-size="8" fill="#4a6a5a" text-anchor="middle">Storage</text>
-  </g>
-
-  <!-- Arrow to output -->
-  <g transform="translate(200, 155)">
-    <path d="M0,15 L120,15" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6,4" fill="none">
-      <animate attributeName="stroke-dashoffset" values="0;-20" dur="0.7s" repeatCount="indefinite"/>
-    </path>
-    <polygon points="120,11 130,15 120,19" fill="#fbbf24" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.7s" repeatCount="indefinite"/>
-    </polygon>
-  </g>
-
-  <!-- OUTPUT CARDS - animated appearance -->
-  <g transform="translate(30, 175)">
-    <!-- Decision card -->
-    <rect x="0" y="0" width="165" height="50" rx="4" fill="#0a0a1a" stroke="#a855f7" stroke-width="1" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <text x="10" y="18" font-family="monospace" font-size="9" fill="#a855f7" font-weight="bold">DECISIONS</text>
-    <text x="10" y="32" font-family="monospace" font-size="8" fill="#6a6a8a">▸ Q3 launch: Sept 15</text>
-    <text x="10" y="44" font-family="monospace" font-size="8" fill="#6a6a8a">▸ Stack: React + Supabase</text>
+  <!-- Output section -->
+  <g transform="translate(30, 185)">
+    <!-- Decisions card -->
+    <g>
+      <rect x="0" y="0" width="170" height="70" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="4" height="70" rx="2" fill="url(#coralAccent)"/>
+      <text x="15" y="20" font-family="Georgia, serif" font-size="10" fill="#e07a5f" font-weight="600">Decisions</text>
+      <text x="15" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">Q3 Launch: Sept 15</text>
+      <text x="15" y="52" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">Stack: React + Supabase</text>
+    </g>
 
     <!-- Action items card -->
-    <rect x="175" y="0" width="165" height="50" rx="4" fill="#0a0a1a" stroke="#00d4ff" stroke-width="1" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.3s"/>
-    </rect>
-    <text x="185" y="18" font-family="monospace" font-size="9" fill="#00d4ff" font-weight="bold">ACTION ITEMS</text>
-    <text x="185" y="32" font-family="monospace" font-size="8" fill="#6a6a8a">▸ @neel — Ship auth [P1]</text>
-    <text x="185" y="44" font-family="monospace" font-size="8" fill="#6a6a8a">▸ @yugam — Dashboard [P1]</text>
+    <g transform="translate(185, 0)">
+      <rect x="0" y="0" width="170" height="70" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="4" height="70" rx="2" fill="url(#sageAccent)"/>
+      <text x="15" y="20" font-family="Georgia, serif" font-size="10" fill="#81b29a" font-weight="600">Action Items</text>
+      <text x="15" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">Ship auth feature [P1]</text>
+      <text x="15" y="52" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">Build dashboard [P1]</text>
+    </g>
 
-    <!-- Risk card -->
-    <rect x="350" y="0" width="165" height="50" rx="4" fill="#0a0a1a" stroke="#fbbf24" stroke-width="1" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.6s"/>
-    </rect>
-    <text x="360" y="18" font-family="monospace" font-size="9" fill="#fbbf24" font-weight="bold">RISK FLAGS</text>
-    <text x="360" y="32" font-family="monospace" font-size="8" fill="#6a6a8a">⚠ 3 tasks due same day</text>
-    <text x="360" y="44" font-family="monospace" font-size="8" fill="#4a8a5a">✓ No blockers</text>
+    <!-- Risk flags card -->
+    <g transform="translate(370, 0)">
+      <rect x="0" y="0" width="170" height="70" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="4" height="70" rx="2" fill="url(#goldAccent)"/>
+      <text x="15" y="20" font-family="Georgia, serif" font-size="10" fill="#d4a373" font-weight="600">Risk Flags</text>
+      <text x="15" y="38" font-family="-apple-system, sans-serif" font-size="9" fill="#4a4a4a">3 tasks due same day</text>
+      <text x="15" y="52" font-family="-apple-system, sans-serif" font-size="9" fill="#81b29a">No blockers</text>
+    </g>
   </g>
 
-  <!-- Bottom status bar -->
-  <g transform="translate(30, 280)">
-    <rect x="0" y="0" width="540" height="40" rx="6" fill="#0a0a1a" stroke="#1e1e3e" stroke-width="1"/>
-    <text x="15" y="25" font-family="monospace" font-size="10" fill="#4a6a5a">$ momentum process meeting.mp3</text>
-
-    <!-- Progress bar animation -->
-    <rect x="250" y="18" width="200" height="8" rx="4" fill="#1a1a2a"/>
-    <rect x="250" y="18" width="200" height="8" rx="4" fill="none" stroke="#2a2a4a" stroke-width="1"/>
-    <rect x="252" y="20" width="0" height="4" rx="2" fill="url(#cyanGrad)">
+  <!-- Progress bar - elegant style -->
+  <g transform="translate(30, 275)">
+    <rect x="0" y="0" width="540" height="45" rx="8" fill="white" stroke="#e8e4df" stroke-width="1" filter="url(#cardShadow)"/>
+    
+    <text x="20" y="28" font-family="-apple-system, sans-serif" font-size="11" fill="#4a4a4a">momentum process meeting.mp3</text>
+    
+    <!-- Progress indicator -->
+    <rect x="280" y="18" width="200" height="8" rx="4" fill="#f5f2ed"/>
+    <rect x="280" y="18" width="200" height="8" rx="4" fill="none" stroke="#e8e4df" stroke-width="0.5"/>
+    <rect x="282" y="20" width="0" height="4" rx="2" fill="url(#coralAccent)">
       <animate attributeName="width" values="0;196" dur="3s" repeatCount="indefinite"/>
     </rect>
-
-    <!-- Percentage -->
-    <text x="460" y="25" font-family="monospace" font-size="9" fill="#00d4ff">
-      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
-      100%
+    
+    <text x="495" y="27" font-family="-apple-system, sans-serif" font-size="10" fill="#e07a5f" font-weight="500">
+      <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+      Done
     </text>
   </g>
 
-  <!-- Title -->
-  <text x="300" y="328" font-family="monospace" font-size="10" fill="#3a3a5a" text-anchor="middle">MOMENTUM AI — Meeting Intelligence in 48 hours</text>
-
-  <!-- Corner decorations -->
-  <circle cx="15" cy="325" r="3" fill="#22c55e" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="585" cy="325" r="3" fill="#a855f7" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
-  </circle>
+  <!-- Title footer -->
+  <text x="300" y="332" font-family="Georgia, serif" font-size="10" fill="#8a8a8a" text-anchor="middle" letter-spacing="0.5">Momentum AI — Meeting Intelligence in 48 Hours</text>
 </svg>
