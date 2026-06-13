@@ -13,9 +13,7 @@ Meeting Intelligence & Execution System
 
 Built in 48 hours at OceanLab × CHARUSAT Hackathon. AI pipeline that ingests meeting audio and outputs structured tasks, decisions, and risk flags.
 
-`Whisper → Gemini → Supabase → React Dashboard`
-
-![Momentum AI](assets/project-momentum.png)
+![Momentum AI](assets/project-momentum-animated.svg)
 
 ---
 
@@ -24,9 +22,7 @@ Indian Sign Language Learning Platform
 
 Published at ACAI-2026, National Conference on AI. Real-time gesture feedback using MediaPipe and TensorFlow Lite.
 
-`Flutter · Firebase · MediaPipe · TensorFlow Lite`
-
-![Kairo AI](assets/project-kairoai.png)
+![Kairo AI](assets/project-kairoai-animated.svg)
 
 ---
 
@@ -35,9 +31,7 @@ AI Autism Support Platform
 
 Best Research Paper Award at Student Conference on Self-Reliant India. Multi-module system with AI pattern detection for stress triggers.
 
-`Python · Django · CNN · ML · NLP`
-
-![DailyNest](assets/project-dailynest.png)
+![DailyNest](assets/project-dailynest-animated.svg)
 
 ---
 
