@@ -1,68 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 210">
   <defs>
     <filter id="kglow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0f1628"/>
+    </linearGradient>
   </defs>
 
-  <rect width="280" height="200" fill="#0a0a12"/>
+  <rect width="280" height="210" fill="url(#cardGrad2)"/>
 
-  <!-- Isometric display case -->
-  <polygon points="20,30 260,30 280,18 40,18" fill="#14141f" stroke="#2a2a3e" stroke-width="1"/>
-  <polygon points="20,30 260,30 260,170 20,170" fill="#0d0d18" stroke="#2a2a3e" stroke-width="1"/>
-  <polygon points="260,30 280,18 280,158 260,170" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
-  <polygon points="28,35 252,35 252,163 28,163" fill="#0a0a12" stroke="#1e1e30" stroke-width="0.5"/>
+  <!-- Floating particles -->
+  <circle cx="240" cy="30" r="1.5" fill="#a855f7" opacity="0.5">
+    <animate attributeName="cy" values="30;25;30" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="40" cy="60" r="1" fill="#ff6b9d" opacity="0.5">
+    <animate attributeName="cy" values="60;55;60" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Project title -->
-  <text x="140" y="60" font-family="monospace" font-size="16" font-weight="bold" fill="#e0e0ff" text-anchor="middle" letter-spacing="1">KAIRO AI</text>
+  <!-- Card border glow -->
+  <rect x="2" y="2" width="276" height="206" rx="8" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
-  <line x1="50" y1="68" x2="230" y2="68" stroke="#bd93f9" stroke-width="0.8" opacity="0.5"/>
+  <rect x="10" y="10" width="260" height="190" rx="6" fill="#1a0a2e" stroke="#2a1a4a" stroke-width="1"/>
+
+  <!-- Accent bar -->
+  <rect x="10" y="10" width="260" height="3" rx="1.5" fill="#a855f7" opacity="0.8"/>
+
+  <!-- Title -->
+  <text x="140" y="42" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2" filter="url(#kglow)">KAIRO AI</text>
+
+  <text x="140" y="60" font-family="Arial, sans-serif" font-size="9" fill="#ff6b9d" text-anchor="middle">Indian Sign Language Learning Platform</text>
 
   <!-- Badges -->
-  <rect x="40" y="74" width="80" height="14" rx="2" fill="#bd93f9" fill-opacity="0.1" stroke="#bd93f9" stroke-width="0.5"/>
-  <text x="80" y="84" font-family="monospace" font-size="8" fill="#bd93f9" text-anchor="middle">ACAi-2026 PAPER</text>
+  <rect x="20" y="72" width="75" height="16" rx="8" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="57" y="83" font-family="monospace" font-size="8" fill="#a855f7" text-anchor="middle">ACAi-2026</text>
 
-  <rect x="125" y="74" width="75" height="14" rx="2" fill="#f1fa8c" fill-opacity="0.1" stroke="#f1fa8c" stroke-width="0.5"/>
-  <text x="162" y="84" font-family="monospace" font-size="8" fill="#f1fa8c" text-anchor="middle">NATIONAL CONF</text>
+  <rect x="100" y="72" width="90" height="16" rx="8" fill="#fbbf24" fill-opacity="0.15" stroke="#fbbf24" stroke-width="0.8"/>
+  <text x="145" y="83" font-family="monospace" font-size="8" fill="#fbbf24" text-anchor="middle">NATIONAL CONF</text>
 
-  <rect x="205" y="74" width="45" height="14" rx="2" fill="#ff79c6" fill-opacity="0.1" stroke="#ff79c6" stroke-width="0.5"/>
-  <text x="227" y="84" font-family="monospace" font-size="8" fill="#ff79c6" text-anchor="middle">RESEARCH</text>
+  <rect x="195" y="72" width="55" height="16" rx="8" fill="#00d4ff" fill-opacity="0.15" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="222" y="83" font-family="monospace" font-size="8" fill="#00d4ff" text-anchor="middle">RESEARCH</text>
 
-  <!-- Description -->
-  <text x="42" y="102" font-family="monospace" font-size="9" fill="#6a6a9a">
-    <tspan x="42" dy="0">Indian Sign Language</tspan>
-    <tspan x="42" dy="12">Learning Platform</tspan>
-  </text>
+  <!-- Tech icons -->
+  <g transform="translate(20, 95)">
+    <rect x="0" y="0" width="38" height="18" rx="3" fill="#1a0a2e" stroke="#00d4ff" stroke-width="0.8" opacity="0.7"/>
+    <text x="19" y="12" font-family="monospace" font-size="7" fill="#00d4ff" text-anchor="middle">Flutter</text>
 
-  <!-- Hand gesture visualization -->
-  <g transform="translate(30, 108)">
-    <!-- Simplified hand outline using paths -->
-    <ellipse cx="20" cy="30" rx="14" ry="18" fill="#1a1a28" stroke="#bd93f9" stroke-width="0.8" opacity="0.6"/>
-    <!-- Finger lines -->
-    <path d="M10,18 Q14,10 20,12 Q26,10 30,18" stroke="#bd93f9" stroke-width="0.8" fill="none" opacity="0.5"/>
-    <path d="M12,22 L12,32 M16,20 L16,34 M20,18 L20,35 M24,20 L24,34 M28,22 L28,32" stroke="#bd93f9" stroke-width="0.5" fill="none" opacity="0.4"/>
-    <!-- MediaPipe indicator -->
-    <circle cx="55" cy="25" r="8" fill="none" stroke="#50fa7b" stroke-width="0.8" opacity="0.5"/>
-    <text x="55" y="28" font-family="monospace" font-size="6" fill="#50fa7b" text-anchor="middle">MP</text>
+    <rect x="42" y="0" width="38" height="18" rx="3" fill="#1a0a2e" stroke="#a855f7" stroke-width="0.8" opacity="0.7"/>
+    <text x="61" y="12" font-family="monospace" font-size="7" fill="#a855f7" text-anchor="middle">Firebase</text>
+
+    <rect x="84" y="0" width="50" height="18" rx="3" fill="#1a0a2e" stroke="#50fa7b" stroke-width="0.8" opacity="0.7"/>
+    <text x="109" y="12" font-family="monospace" font-size="7" fill="#50fa7b" text-anchor="middle">MediaPipe</text>
+
+    <rect x="138" y="0" width="60" height="18" rx="3" fill="#1a0a2e" stroke="#fbbf24" stroke-width="0.8" opacity="0.7"/>
+    <text x="168" y="12" font-family="monospace" font-size="7" fill="#fbbf24" text-anchor="middle">TensorFlow</text>
   </g>
 
-  <!-- Tech stack -->
-  <text x="130" y="118" font-family="monospace" font-size="8" fill="#4a4a6a">Flutter · Firebase · MediaPipe · TensorFlow Lite</text>
+  <!-- Impact -->
+  <text x="25" y="140" font-family="monospace" font-size="9" fill="#8888aa">▸</text>
+  <text x="35" y="140" font-family="monospace" font-size="9" fill="#aaaacc">Real-time gesture feedback system</text>
 
-  <!-- Impact bullets -->
-  <text x="42" y="140" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
-  <text x="52" y="140" font-family="monospace" font-size="8" fill="#5a5a7a">Real-time gesture feedback</text>
+  <text x="25" y="156" font-family="monospace" font-size="9" fill="#8888aa">▸</text>
+  <text x="35" y="156" font-family="monospace" font-size="9" fill="#aaaacc">Published at National AI Conference</text>
 
-  <text x="42" y="154" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
-  <text x="52" y="154" font-family="monospace" font-size="8" fill="#5a5a7a">National conference publication</text>
+  <text x="25" y="172" font-family="monospace" font-size="9" fill="#8888aa">▸</text>
+  <text x="35" y="172" font-family="monospace" font-size="9" fill="#aaaacc">Self-correct learning without instructor</text>
 
-  <text x="42" y="166" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
-  <text x="52" y="166" font-family="monospace" font-size="8" fill="#5a5a7a">Self-correct learning system</text>
-
-  <!-- Corner accent -->
-  <path d="M20,30 L20,170 M20,30 L260,30" stroke="#bd93f9" stroke-width="1.5" fill="none" opacity="0.4"/>
-  <circle cx="20" cy="30" r="2" fill="#bd93f9" filter="url(#kglow)"/>
-  <circle cx="258" cy="167" r="3" fill="#bd93f9" opacity="0.6"/>
+  <!-- Sparkle -->
+  <g transform="translate(240, 180)" filter="url(#kglow)">
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </g>
 
 </svg>

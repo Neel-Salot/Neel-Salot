@@ -1,30 +1,40 @@
-# NEEL SALOT // FULL STACK DEVELOPER · AI BUILDER · SYSTEMS THINKER
+# NEEL SALOT
 
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- ISOMETRIC GRID - 3D PERSPECTIVE STRUCTURAL HEADER                     -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- COSMIC HERO - animated floating particles, orbitals, stars  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 <a href="https://github.com/Neel-Salot" target="_blank">
-<img src="assets/header-isometric.svg" width="100%" alt="Neel Salot" />
+<img src="assets/cosmic-hero.svg" width="100%" alt="Neel Salot" />
 </a>
 
 <br><br>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- IMPACT DIMENSIONS - 3D CUBE COMPOSITION                               -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- FUN INTRO - who even is this person                        -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-<a href="https://github.com/Neel-Salot" target="_blank">
-<img src="assets/impact-cube.svg" width="100%" alt="Impact Stats" />
-</a>
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║   final year B.Sc. IT student (CGPA 9.46 🏆)                        ║
+║   who builds things from AI pipelines at hackathons                  ║
+║   to systems at national conferences                                 ║
+║                                                                      ║
+║   comfortable across the full stack                                  ║
+║   drawn to ambiguous problems                                       ║
+║   and products that actually get used                               ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
 
 <br><br>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- PROJECTS - ISOMETRIC DISPLAY CASES                                    -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- PROJECTS - display case style                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 <a href="https://github.com/yugamm15/momentum-ai" target="_blank">
 <img src="assets/project-momentum.svg" alt="Momentum AI" width="32%" style="vertical-align:top;" />
@@ -40,12 +50,9 @@
 
 <br><br>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- TERMINAL OUTPUT - REAL PROJECT OUTPUT                                 -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<details open>
-<summary><b>⟨ OUTPUT: MOMENTUM AI ⟩</b></summary>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- REAL OUTPUT - this is what the code actually does             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 ```momentum-ai
 $ momentum process meeting-recording.mp3
@@ -80,47 +87,86 @@ $ momentum process meeting-recording.mp3
   Output: 3 tasks created | 2 decisions logged
   ─────────────────────────────────────────
 ```
-</details>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- TECH STACK - BLUEPRINT GRID                                           -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-
-<a href="https://github.com/Neel-Salot" target="_blank">
-<img src="assets/stack-blueprint.svg" width="100%" alt="Tech Stack" />
-</a>
 
 <br><br>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- RESEARCH & EXPERIENCE - VERTICAL TIMELINE                             -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- STACK - clean organized sections                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-<a href="https://github.com/Neel-Salot" target="_blank">
-<img src="assets/timeline-structural.svg" width="100%" alt="Experience & Research" />
-</a>
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║   FRONTEND ────────── React · TypeScript · JavaScript · CSS      ║
+║                                                                   ║
+║   AI & LLMs ──────── Agentic AI · Gemini · Whisper · LLM Int.    ║
+║                                                                   ║
+║   BACKEND ────────── Node.js · Python · PHP · .NET               ║
+║                                                                   ║
+║   MOBILE ─────────── Flutter · Kotlin · TensorFlow Lite          ║
+║                                                                   ║
+║   DATABASE ───────── MySQL · Firebase · Supabase                  ║
+║                                                                   ║
+║   TOOLS ──────────── GitHub · Jira                               ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
+
+<br><br>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- EXPERIENCE                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║   AUG–OCT 2025 ──── Full Stack Developer Intern                   ║
+║                      Swayam Tech · Remote · GEMS platform          ║
+║                                                                   ║
+║   JAN 2026 ──────── KairoAI published at ACAi-2026                ║
+║                      National Conference on AI                     ║
+║                                                                   ║
+║   2025 ──────────── DailyNest won Best Research Paper             ║
+║                      Student Conf on Self-Reliant India            ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
+
+<br><br>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- EDUCATION                                                   -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║   B.Sc. IT ──────────────────────────────────── CGPA 9.46         ║
+║   Uka Tarsadia University · BMIIT, Surat ──── Academic            ║
+║                                             Excellence Award (2x)  ║
+║                                                                   ║
+║   Class XII ─────────────────────────────────── 90.13%            ║
+║   R. D. Ghael Jeevan Bharti Kumar Bhavan ──── GHSEB              ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
 
 </div>
-
-<br>
 
 ---
 
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!-- CONTACT STRUCTURAL BAR                                                -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- CONNECT                                                     -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║  ◎  neelsalot.work@gmail.com                               ║
-║  ⌂  github.com/Neel-Salot                                 ║
-║  ◈  linkedin.com/in/neel-salot                             ║
-║  ⬡  Surat, Gujarat                                         ║
-╚══════════════════════════════════════════════════════════════╝
+  ◎  neelsalot.work@gmail.com
+  ◎  github.com/Neel-Salot
+  ◎  linkedin.com/in/neel-salot
+  ◎  Surat, Gujarat
 ```
 
 </div>
