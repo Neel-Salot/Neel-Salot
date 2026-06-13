@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200">
+  <defs>
+    <filter id="dglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="280" height="200" fill="#0a0a12"/>
+
+  <!-- Isometric display case -->
+  <polygon points="20,30 260,30 280,18 40,18" fill="#14141f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="20,30 260,30 260,170 20,170" fill="#0d0d18" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="260,30 280,18 280,158 260,170" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="28,35 252,35 252,163 28,163" fill="#0a0a12" stroke="#1e1e30" stroke-width="0.5"/>
+
+  <!-- Project title -->
+  <text x="140" y="60" font-family="monospace" font-size="16" font-weight="bold" fill="#e0e0ff" text-anchor="middle" letter-spacing="1">DAILYNEST</text>
+
+  <line x1="50" y1="68" x2="230" y2="68" stroke="#50fa7b" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Badges -->
+  <rect x="40" y="74" width="70" height="14" rx="2" fill="#50fa7b" fill-opacity="0.1" stroke="#50fa7b" stroke-width="0.5"/>
+  <text x="75" y="84" font-family="monospace" font-size="8" fill="#50fa7b" text-anchor="middle">★ BEST PAPER</text>
+
+  <rect x="115" y="74" width="100" height="14" rx="2" fill="#f1fa8c" fill-opacity="0.1" stroke="#f1fa8c" stroke-width="0.5"/>
+  <text x="165" y="84" font-family="monospace" font-size="8" fill="#f1fa8c" text-anchor="middle">STUDENT CONF +Y19</text>
+
+  <rect x="220" y="74" width="30" height="14" rx="2" fill="#ff79c6" fill-opacity="0.1" stroke="#ff79c6" stroke-width="0.5"/>
+  <text x="235" y="84" font-family="monospace" font-size="8" fill="#ff79c6" text-anchor="middle">AI</text>
+
+  <!-- Description -->
+  <text x="42" y="102" font-family="monospace" font-size="9" fill="#6a6a9a">
+    <tspan x="42" dy="0">AI Autism Support Platform</tspan>
+    <tspan x="42" dy="12">Multi-module Mobile System</tspan>
+  </text>
+
+  <!-- Module visualization -->
+  <g transform="translate(30, 108)">
+    <!-- 4 connected module nodes -->
+    <rect x="0" y="0" width="38" height="22" rx="2" fill="#0f0f1a" stroke="#50fa7b" stroke-width="0.8" opacity="0.6"/>
+    <text x="19" y="14" font-family="monospace" font-size="6" fill="#5a5a7a" text-anchor="middle">DAY PLANNER</text>
+
+    <rect x="42" y="0" width="38" height="22" rx="2" fill="#0f0f1a" stroke="#bd93f9" stroke-width="0.8" opacity="0.6"/>
+    <text x="61" y="14" font-family="monospace" font-size="6" fill="#5a5a7a" text-anchor="middle">EMOTION</text>
+
+    <rect x="84" y="0" width="38" height="22" rx="2" fill="#f1fa8c" stroke-width="0.8" opacity="0.6" fill-opacity="0.1" stroke="#f1fa8c"/>
+    <text x="103" y="14" font-family="monospace" font-size="6" fill="#5a5a7a" text-anchor="middle">COMM ASST</text>
+
+    <rect x="126" y="0" width="50" height="22" rx="2" fill="#ff79c6" fill-opacity="0.1" stroke="#ff79c6" stroke-width="0.8" opacity="0.6"/>
+    <text x="151" y="14" font-family="monospace" font-size="6" fill="#5a5a7a" text-anchor="middle">CAREGIVER</text>
+
+    <!-- Connection lines -->
+    <path d="M38,11 L42,11" stroke="#2a2a3e" stroke-width="0.8"/>
+    <path d="M80,11 L84,11" stroke="#2a2a3e" stroke-width="0.8"/>
+    <path d="M122,11 L126,11" stroke="#2a2a3e" stroke-width="0.8"/>
+  </g>
+
+  <!-- Tech stack -->
+  <text x="30" y="122" font-family="monospace" font-size="8" fill="#4a4a6a">Python · Django · CNN · ML · NLP</text>
+
+  <!-- Impact bullets -->
+  <text x="42" y="140" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
+  <text x="52" y="140" font-family="monospace" font-size="8" fill="#5a5a7a">Multi-module ASD support system</text>
+
+  <text x="42" y="154" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
+  <text x="52" y="154" font-family="monospace" font-size="8" fill="#5a5a7a">Stress trigger AI pattern detection</text>
+
+  <text x="42" y="166" font-family="monospace" font-size="8" fill="#4a4a6a">▸</text>
+  <text x="52" y="166" font-family="monospace" font-size="8" fill="#5a5a7a">Best Research Paper Award</text>
+
+  <!-- Corner accent -->
+  <path d="M20,30 L20,170 M20,30 L260,30" stroke="#50fa7b" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="20" cy="30" r="2" fill="#50fa7b" filter="url(#dglow)"/>
+  <circle cx="258" cy="167" r="3" fill="#50fa7b" opacity="0.6"/>
+
+</svg>

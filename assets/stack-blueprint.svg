@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180">
+  <defs>
+    <filter id="sglow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="blueGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a1a2e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="180" fill="#0a0a12"/>
+  <rect width="900" height="180" fill="url(#blueGrid)" opacity="0.3"/>
+
+  <!-- Section label -->
+  <text x="20" y="28" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="2">// TECH STACK</text>
+  <line x1="20" y1="35" x2="180" y2="35" stroke="#2a2a3e" stroke-width="0.5"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- FRONTEND                                             -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Section header -->
+  <rect x="30" y="48" width="8" height="20" fill="#00d4ff" opacity="0.3"/>
+  <text x="44" y="62" font-family="monospace" font-size="9" fill="#00d4ff" letter-spacing="1">FRONTEND</text>
+
+  <!-- Tech pills -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="26" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">React</text>
+
+    <rect x="58" y="0" width="48" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="82" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">TypeScript</text>
+
+    <rect x="112" y="0" width="48" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="136" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">JavaScript</text>
+
+    <rect x="166" y="0" width="38" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="185" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">CSS</text>
+
+    <rect x="210" y="0" width="38" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="229" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">HTML</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- AI & LLMs                                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <rect x="30" y="100" width="8" height="20" fill="#bd93f9" opacity="0.3"/>
+  <text x="44" y="114" font-family="monospace" font-size="9" fill="#bd93f9" letter-spacing="1">AI & LLMs</text>
+
+  <g transform="translate(30, 122)">
+    <rect x="0" y="0" width="70" height="18" rx="3" fill="#bd93f9" fill-opacity="0.08" stroke="#bd93f9" stroke-width="0.8" opacity="0.7"/>
+    <text x="35" y="12" font-family="monospace" font-size="8" fill="#bd93f9" text-anchor="middle">Agentic AI</text>
+
+    <rect x="76" y="0" width="46" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="99" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Gemini</text>
+
+    <rect x="128" y="0" width="46" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="151" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Whisper</text>
+
+    <rect x="180" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="206" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">LLM Int.</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BACKEND & APIs                                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <rect x="340" y="48" width="8" height="20" fill="#f1fa8c" opacity="0.3"/>
+  <text x="354" y="62" font-family="monospace" font-size="9" fill="#f1fa8c" letter-spacing="1">BACKEND & APIs</text>
+
+  <g transform="translate(340, 70)">
+    <rect x="0" y="0" width="48" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="24" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Node.js</text>
+
+    <rect x="54" y="0" width="42" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="75" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Python</text>
+
+    <rect x="102" y="0" width="38" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="121" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">PHP</text>
+
+    <rect x="146" y="0" width="46" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="169" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">.NET</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- DATABASES & TOOLS                                    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <rect x="340" y="100" width="8" height="20" fill="#ff79c6" opacity="0.3"/>
+  <text x="354" y="114" font-family="monospace" font-size="9" fill="#ff79c6" letter-spacing="1">DATABASES & TOOLS</text>
+
+  <g transform="translate(340, 122)">
+    <rect x="0" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="26" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">MySQL</text>
+
+    <rect x="58" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="84" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Firebase</text>
+
+    <rect x="116" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="142" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Supabase</text>
+
+    <rect x="174" y="0" width="50" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="199" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">GitHub</text>
+
+    <rect x="230" y="0" width="38" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="249" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Jira</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MOBILE                                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <rect x="620" y="48" width="8" height="20" fill="#50fa7b" opacity="0.3"/>
+  <text x="634" y="62" font-family="monospace" font-size="9" fill="#50fa7b" letter-spacing="1">MOBILE</text>
+
+  <g transform="translate(620, 70)">
+    <rect x="0" y="0" width="50" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="25" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Flutter</text>
+
+    <rect x="56" y="0" width="46" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="79" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Kotlin</text>
+
+    <rect x="108" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="134" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">TensorFlow</text>
+
+    <rect x="166" y="0" width="52" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="192" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">MediaPipe</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MOBILE MODULES                                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <rect x="620" y="100" width="8" height="20" fill="#ffb86c" opacity="0.3"/>
+  <text x="634" y="114" font-family="monospace" font-size="9" fill="#ffb86c" letter-spacing="1">DOMAINS</text>
+
+  <g transform="translate(620, 122)">
+    <rect x="0" y="0" width="90" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="45" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Computer Vision</text>
+
+    <rect x="96" y="0" width="80" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="136" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">NLP & ML</text>
+
+    <rect x="182" y="0" width="60" height="18" rx="3" fill="#0f0f1a" stroke="#2a2a3e" stroke-width="0.8"/>
+    <text x="212" y="12" font-family="monospace" font-size="8" fill="#7a7a9a" text-anchor="middle">Serverless</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <line x1="0" y1="172" x2="900" y2="172" stroke="#1a1a2e" stroke-width="0.5"/>
+
+  <!-- Corner markers -->
+  <text x="880" y="176" font-family="monospace" font-size="8" fill="#2a2a4a">╗</text>
+
+</svg>

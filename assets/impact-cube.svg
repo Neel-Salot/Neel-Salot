@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160">
+  <defs>
+    <filter id="cglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="smGrid" width="20" height="11.5" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 20 5.75 M 0 5.75 L 10 11.5 M 10 11.5 L 20 5.75 M 10 0 L 0 5.75" fill="none" stroke="#1a1a2e" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="160" fill="#0a0a12"/>
+
+  <!-- Section label -->
+  <text x="20" y="28" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="2">// IMPACT DIMENSIONS</text>
+  <line x1="20" y1="35" x2="200" y2="35" stroke="#2a2a3e" stroke-width="0.5"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STAT BLOCK 1 - CGPA                                 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- Isometric card base -->
+  <polygon points="30,80 130,80 155,65 55,65" fill="#12121f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="30,80 130,80 130,130 30,130" fill="#0e0e1a" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="130,80 155,65 155,115 130,130" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+
+  <!-- Inner accent -->
+  <polygon points="35,83 125,83 125,127 35,127" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Number -->
+  <text x="80" y="105" font-family="monospace" font-size="28" font-weight="bold" fill="#e0e0ff" text-anchor="middle" filter="url(#cglow)">9.46</text>
+  <!-- Label -->
+  <text x="80" y="120" font-family="monospace" font-size="9" fill="#5a5a8a" text-anchor="middle">CGPA · TOPPER</text>
+
+  <!-- Corner decoration -->
+  <path d="M30,80 L30,65 M30,80 L55,65" stroke="#00d4ff" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="72" r="2" fill="#00d4ff" opacity="0.6"/>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STAT BLOCK 2 - PAPERS                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <polygon points="190,80 290,80 315,65 215,65" fill="#12121f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="190,80 290,80 290,130 190,130" fill="#0e0e1a" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="290,80 315,65 315,115 290,130" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="195,83 285,83 285,127 195,127" fill="none" stroke="#bd93f9" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Number -->
+  <text x="240" y="105" font-family="monospace" font-size="28" font-weight="bold" fill="#e0e0ff" text-anchor="middle" filter="url(#sglow)">2</text>
+  <text x="240" y="120" font-family="monospace" font-size="9" fill="#5a5a8a" text-anchor="middle">PAPERS · PUBLISHED</text>
+
+  <!-- Paper icon -->
+  <rect x="255" y="68" width="10" height="13" fill="none" stroke="#bd93f9" stroke-width="1" rx="1" opacity="0.5"/>
+  <line x1="257" y1="72" x2="263" y2="72" stroke="#bd93f9" stroke-width="0.5" opacity="0.5"/>
+  <line x1="257" y1="74" x2="263" y2="74" stroke="#bd93f9" stroke-width="0.5" opacity="0.5"/>
+  <path d="M260,68 L263,65 L265,68" stroke="#bd93f9" stroke-width="0.5" fill="none" opacity="0.5"/>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STAT BLOCK 3 - AWARDS                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <polygon points="350,80 450,80 475,65 375,65" fill="#12121f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="350,80 450,80 450,130 350,130" fill="#0e0e1a" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="450,80 475,65 475,115 450,130" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="355,83 445,83 445,127 355,127" fill="none" stroke="#f1fa8c" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Number -->
+  <text x="400" y="105" font-family="monospace" font-size="28" font-weight="bold" fill="#f1fa8c" text-anchor="middle" filter="url(#cglow)">5+</text>
+  <text x="400" y="120" font-family="monospace" font-size="9" fill="#5a5a8a" text-anchor="middle">AWARDS · RECOGNIZED</text>
+
+  <!-- Trophy icon -->
+  <path d="M420,68 L425,68 L425,73 L420,73 Z" fill="#f1fa8c" opacity="0.3"/>
+  <path d="M422,65 L423,65 L423,68 M422,73 L425,73 L425,76 L422,76 Z" stroke="#f1fa8c" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STAT BLOCK 4 - HACKATHONS                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <polygon points="510,80 610,80 635,65 535,65" fill="#12121f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="510,80 610,80 610,130 510,130" fill="#0e0e1a" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="610,80 635,65 635,115 610,130" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="515,83 605,83 605,127 515,127" fill="none" stroke="#ff79c6" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="560" y="105" font-family="monospace" font-size="28" font-weight="bold" fill="#e0e0ff" text-anchor="middle" filter="url(#cglow)">48h</text>
+  <text x="560" y="120" font-family="monospace" font-size="9" fill="#5a5a8a" text-anchor="middle">HACKATHON · BUILD</text>
+
+  <!-- Code brackets icon -->
+  <text x="580" y="71" font-family="monospace" font-size="12" fill="#ff79c6" opacity="0.4">&lt;/&gt;</text>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STAT BLOCK 5 - NATIONAL                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <polygon points="670,80 770,80 795,65 695,65" fill="#12121f" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="670,80 770,80 770,130 670,130" fill="#0e0e1a" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="770,80 795,65 795,115 770,130" fill="#0a0a12" stroke="#2a2a3e" stroke-width="1"/>
+  <polygon points="675,83 765,83 765,127 675,127" fill="none" stroke="#50fa7b" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="720" y="105" font-family="monospace" font-size="28" font-weight="bold" fill="#50fa7b" text-anchor="middle" filter="url(#cglow)">3x</text>
+  <text x="720" y="120" font-family="monospace" font-size="9" fill="#5a5a8a" text-anchor="middle">NATIONAL · STAGE</text>
+
+  <!-- Map pin -->
+  <circle cx="740" cy="68" r="4" fill="none" stroke="#50fa7b" stroke-width="1" opacity="0.4"/>
+  <circle cx="740" cy="68" r="1.5" fill="#50fa7b" opacity="0.5"/>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CONNECTING LINE                                     -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <line x1="155" y1="72" x2="215" y2="72" stroke="#1a1a30" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="315" y1="72" x2="375" y2="72" stroke="#1a1a30" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="475" y1="72" x2="535" y2="72" stroke="#1a1a30" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="635" y1="72" x2="695" y2="72" stroke="#1a1a30" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <!-- Bottom bar -->
+  <line x1="0" y1="150" x2="900" y2="150" stroke="#1a1a2e" stroke-width="0.5"/>
+
+</svg>

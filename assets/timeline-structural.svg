@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200">
+  <defs>
+    <filter id="tglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="200" fill="#0a0a12"/>
+
+  <!-- Section label -->
+  <text x="20" y="28" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="2">// EXPERIENCE & RESEARCH</text>
+  <line x1="20" y1="35" x2="240" y2="35" stroke="#2a2a3e" stroke-width="0.5"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- VERTICAL TIMELINE                                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Main timeline spine -->
+  <line x1="40" y1="55" x2="40" y2="185" stroke="#2a2a3e" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- NODE 1 - INTERNSHIP                                   -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Timeline dot -->
+  <circle cx="40" cy="60" r="4" fill="#0a0a12" stroke="#00d4ff" stroke-width="1.5"/>
+  <circle cx="40" cy="60" r="1.5" fill="#00d4ff" filter="url(#tglow)"/>
+
+  <!-- Content box -->
+  <rect x="56" y="48" width="380" height="40" rx="2" fill="#0f0f1a" stroke="#1e1e30" stroke-width="0.8"/>
+
+  <!-- Year -->
+  <text x="66" y="60" font-family="monospace" font-size="9" fill="#00d4ff">AUG–OCT 2025</text>
+
+  <!-- Role -->
+  <text x="66" y="74" font-family="monospace" font-size="10" fill="#c0c0e0" font-weight="bold">Full Stack Developer Intern</text>
+
+  <!-- Company + detail -->
+  <text x="240" y="74" font-family="monospace" font-size="9" fill="#5a5a7a">Swayam Tech · Remote · GEMS enterprise platform</text>
+
+  <!-- Branch line -->
+  <path d="M44,60 L52,60 L52,74 L56,74" stroke="#1e1e30" stroke-width="0.5" fill="none"/>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- NODE 2 - ACAI PAPER                                  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <circle cx="40" cy="110" r="4" fill="#0a0a12" stroke="#bd93f9" stroke-width="1.5"/>
+  <circle cx="40" cy="110" r="1.5" fill="#bd93f9" filter="url(#tglow)"/>
+
+  <rect x="56" y="98" width="380" height="40" rx="2" fill="#0f0f1a" stroke="#1e1e30" stroke-width="0.8"/>
+
+  <text x="66" y="110" font-family="monospace" font-size="9" fill="#bd93f9">JAN 2026</text>
+  <text x="66" y="124" font-family="monospace" font-size="10" fill="#c0c0e0" font-weight="bold">KairoAI: Indian Sign Language Learning Platform</text>
+  <text x="310" y="124" font-family="monospace" font-size="9" fill="#5a5a7a">ACAi-2026 · National Conference on AI</text>
+
+  <path d="M44,110 L52,110 L52,124 L56,124" stroke="#1e1e30" stroke-width="0.5" fill="none"/>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- NODE 3 - STUDENT CONF PAPER                           -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <circle cx="40" cy="160" r="4" fill="#0a0a12" stroke="#f1fa8c" stroke-width="1.5"/>
+  <circle cx="40" cy="160" r="1.5" fill="#f1fa8c" filter="url(#tglow)"/>
+
+  <rect x="56" y="148" width="380" height="40" rx="2" fill="#0f0f1a" stroke="#1e1e30" stroke-width="0.8"/>
+
+  <text x="66" y="160" font-family="monospace" font-size="9" fill="#f1fa8c">2025</text>
+  <text x="66" y="174" font-family="monospace" font-size="10" fill="#c0c0e0" font-weight="bold">AI-Powered Life Aid for Autism Spectrum Disorder</text>
+  <text x="340" y="174" font-family="monospace" font-size="9" fill="#5a5a7a">★ Best Research Paper Award</text>
+
+  <path d="M44,160 L52,160 L52,174 L56,174" stroke="#1e1e30" stroke-width="0.5" fill="none"/>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- EDUCATION SIDE                                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Vertical divider -->
+  <line x1="460" y1="48" x2="460" y2="185" stroke="#1e1e30" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Education label -->
+  <text x="476" y="62" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="2">EDUCATION</text>
+
+  <!-- Degree block -->
+  <rect x="476" y="72" width="380" height="50" rx="2" fill="#0f0f1a" stroke="#1e1e30" stroke-width="0.8"/>
+
+  <!-- Accent bar -->
+  <rect x="476" y="72" width="3" height="50" rx="1.5" fill="#00d4ff" opacity="0.4"/>
+
+  <text x="490" y="88" font-family="monospace" font-size="10" fill="#c0c0e0" font-weight="bold">B.Sc. Information Technology</text>
+  <text x="490" y="100" font-family="monospace" font-size="9" fill="#6a6a9a">Uka Tarsadia University · BMIIT, Surat</text>
+  <text x="490" y="112" font-family="monospace" font-size="9" fill="#00d4ff">CGPA 9.46 · Academic Excellence Award (2x)</text>
+
+  <!-- HSc block -->
+  <rect x="476" y="130" width="380" height="38" rx="2" fill="#0f0f1a" stroke="#1e1e30" stroke-width="0.8"/>
+  <rect x="476" y="130" width="3" height="38" rx="1.5" fill="#bd93f9" opacity="0.3"/>
+
+  <text x="490" y="145" font-family="monospace" font-size="9" fill="#9a9aba">Class XII · R. D. Ghael Jeevan Bharti Kumar Bhavan</text>
+  <text x="490" y="158" font-family="monospace" font-size="9" fill="#bd93f9">90.13% · GHSEB</text>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- RIGHT SIDE: HACKATHONS                                -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <text x="476" y="180" font-family="monospace" font-size="9" fill="#3a3a5a" letter-spacing="2">HACKATHONS</text>
+
+  <line x1="0" y1="190" x2="900" y2="190" stroke="#1a1a2e" stroke-width="0.5"/>
+
+</svg>
